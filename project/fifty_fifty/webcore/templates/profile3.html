@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <img src="/img/Fifty50Header.png" style="max-height:240px;width:auto;padding-left:50px;">
+                <hr>
+                <p style="color:rgba(0,0,0,1)">Learn to learn, make friends, and build a support network!</p>
+                <a href="#signup" class="btn btn-primary btn-xl page-scroll">Apply for a Mentee</a> <!-- link to signup page here -->
+            </div>
+        </div>
+    </header>
+
+    <section id="latestnews">
+        <div class="container">
+            <div class="row" style="padding:0;margin:0;">
+                <div class="col-sm-12 text-center">
+                    <h2 class="section-heading" style="color:#000">Latest News and Events</h2>
+                    <hr>
+                    <h3> Example News post...</h3>[[ {{ request.GET }}]]  HERE!!!
+                    <p>{% for post in posts %}
+                              <div>
+                                    <p>published: {{ post.published_date }}</p>
+                                    <h1><a href="">{{ post.title }}</a></h1>
+                                    <p>{{ post.text|linebreaksbr }}</p>
+                              </div>
+                              {% endfor %}</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="bg-primary" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center" style="padding-bottom:15px;">
+                    <h2 class="section-heading" style="color:#000;">Special thanks to our sponsors:</h2>
+                    <hr class="primary">
+                    <a href="http://www.defence.gov.au/"><img src="img/sponsor-defence.png"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-dark" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center" style="padding-bottom:15px;">
+                    <h2 class="section-heading">Contact Us</h2>
+                    <hr class="primary">
+                    <p>Catch us on campus or contact us through our social networking sites!</p>
+                        <a href="https://www.instagram.com/anu_fifty50/" style="margin-right:15px;"><i class="fa fa-3x fa-instagram text-primary sr-contact"></i></a>
+                        <a href="mailto:anu.fifty50@gmail.com" style="margin-right:15px;"><i class="fa fa-3x fa-envelope-o text-primary sr-contact"></i></a>
+                        <a href="https://www.facebook.com/ANUFifty50STEM/"><i class="fa fa-3x fa-facebook-official text-primary sr-contact"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/creative.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/creative.min.js"></script>
+
+    {% endblock %}

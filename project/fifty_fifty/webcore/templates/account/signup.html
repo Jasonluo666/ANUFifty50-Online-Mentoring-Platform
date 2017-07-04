@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% load staticfiles %}
+
+{% load i18n %}
+
+
+{% block head_title %}{% trans "Signup" %}{% endblock %}
+
+{% block content %}
+<!---------------------navbar--------------------------------->
+
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="{% url 'home' %}">Fifty50 Mentoring</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+<!----------------------end navbar----------------------------->
+<br>
+<br>
+<div class= 'col-md-4 col-md-offset-4' >
+<h1>{% trans "Sign Up" %}</h1>
+
+<p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
+
+<p>{% blocktrans %}Would you like to register as a{% endblocktrans %}</p>
+
+<p>{% blocktrans %}Mentee {% endblocktrans %}<input type="radio" onclick="javascript:teetorCheck();" name="mm" id="teeCheck"/>
+{% blocktrans %}&nbsp;&nbsp;&nbsp;&nbsp;Mentor {% endblocktrans %}<input type="radio" onclick="javascript:teetorCheck();" name="mm" id="torCheck"/></p>
+
+<form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
+  {% csrf_token %}
+  {{ form.first_name|as_crispy_field }}
+  {{ form.last_name|as_crispy_field }}
+  {{ form.uniId|as_crispy_field }}
+  {{ form.study_year|as_crispy_field }}
+  {{ form.degree_programme|as_crispy_field }}
+  {{ form.degree_major|as_crispy_field }}
+  {{ form.gender|as_crispy_field }}
+  {{ form.mentor_gender|as_crispy_field }}
+</div>
+  <div id="ifYes" style="display:none"  class= 'col-md-4 col-md-offset-4' >
+  {{ form.why_mentor|as_crispy_field }}
+  {{ form.why_div_equ_inc|as_crispy_field }}
+  {{ form.mentee_number|as_crispy_field }}
+  {{ form.hear_about|as_crispy_field }}
+  </div>
+  <div class= 'col-md-4 col-md-offset-4' >
+  {{ form.email|as_crispy_field }}
+  {{ form.password1|as_crispy_field }}
+  {{ form.password2|as_crispy_field }}
+
+  {% if redirect_field_value %}
+  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+  {% endif %}
+  <button type="submit" class="btn btn-primary btn-xl sr-button">{% trans "Sign Up" %} &raquo;</button>
+</form>
+</div>
+
+<script type="text/javascript">
+
+function teetorCheck() {
+    if (document.getElementById('teeCheck').checked) {
+        document.getElementById('ifYes').style.display = 'none';
+    } else {
+        document.getElementById('ifYes').style.display = 'block';
+    }
+  }
+</script>
+{% endblock %}
