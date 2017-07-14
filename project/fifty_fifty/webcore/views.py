@@ -56,3 +56,10 @@ def userProfileContent(request):
     context = {'user':user}
     template = 'content.html'
     return render(request,template,context)
+
+@login_required
+def userProfileContact(request):
+    user = request.user
+    context = {'user':user}
+    template = 'contact.html'
+    return render(request,template,context)

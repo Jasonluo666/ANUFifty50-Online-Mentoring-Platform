@@ -30,6 +30,7 @@ urlpatterns = [
     url(r'^profile/FAQ.html', views.userProfileFAQ, name='profileFAQ'),
     url(r'^profile/profile.html', views.userProfileProfile, name='profileProfile'),
     url(r'^profile/menteelogin.html', views.userProfile, name='profile'),
+    url(r'^profile/contact.html', views.userProfileContact, name='profileContact'),
 
     url(r'^accounts/', include('allauth.urls')),
     url(r'^news/', include('news.urls')),
