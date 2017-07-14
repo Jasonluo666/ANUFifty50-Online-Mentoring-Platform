@@ -64,6 +64,10 @@ This is to make sure the project stays isolated and clean.
     workon Fifty50
 
 
+
+    virtualenv Fifty50
+
+
 ### Install Website Requirements
 
     pip install -r requirements.txt
