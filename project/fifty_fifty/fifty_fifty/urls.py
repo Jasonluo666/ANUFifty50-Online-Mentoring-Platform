@@ -33,7 +33,7 @@ urlpatterns = [
     url(r'^profile/contact.html', views.userProfileContact, name='profileContact'),
 
     url(r'^accounts/', include('allauth.urls')),
-    url(r'^news/', include('news.urls')),
+    url(r'^content/', include('content.urls')),
 ]
 
 if settings.DEBUG:

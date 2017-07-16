@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    'news',
+    'content',
     'debug_toolbar',
     'pair',
 ]

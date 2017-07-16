@@ -17,3 +17,19 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+class Mentor(models.Model):
+    title = models.CharField(max_length=200)
+    text = models.TextField()
+
+    def __str__(self):
+        return self.title
+
+
+
+class Mentee(models.Model):
+    title = models.CharField(max_length=200)
+    text = models.TextField()
+
+    def __str__(self):
+        return self.title
