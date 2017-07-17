@@ -23,6 +23,13 @@
     <!-- Theme CSS -->
     <link href="css/creative.min.css" rel="stylesheet">
 
+<!-- CUSTOM CODE -->
+    <link href="css/star-rating.css" media="all" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- CUSTOM CODE -->
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <!link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -33,16 +40,15 @@
 
 
 </head>
-<body>
 
-  <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="mentorlogin.html">Fifty50 Mentoring</a>
+                <a class="navbar-brand page-scroll" href="menteelogin.html">Fifty50 Mentoring</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -70,7 +76,6 @@
                                         <li>
                         <a class="page-scroll" href="#signout">Sign Out</a>
                     </li>
-
                     <li>
                      <a class="page-scroll" href="profile.html">My Profile <img src="img/unnamed.png" style="height:25px;width:25px; border-radius: 50%"></a>
                  </li>
@@ -82,30 +87,47 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-    <div class="container" style='padding-top:10%'>
-  <!--   <form action="/action_page.php"> -->
-  <form action="mailto:nikitabhatia.17@gmail.com" method="post" enctype="text/plain">
+<body>
+    <div class="container" style="text-align: center; margin-top: 5%;">
+    <h1><div class="row">
+            <div class="row">
+                <h1>How Amazing was your Week?</h1>
+                <h4>Did you meet up with your partner?</h4>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default">No</button>
+                    <button type="button" class="btn btn-default">Online</button>
+                    <button type="button" class="btn btn-default">In Person</button>
+                </div>
+            </div>
+            <section>
+                <div class="container">
+                    <h4>How would you rate Fifty50 so far?</h4>
+                    <div class="row lead evaluation">
+                        <div id="colorstar" class="starrr ratable badForm"></div>
+                        <span id="count">0</span> star(s) -
+                        <span id="meaning"> </span>
+                        <div class='indicators' style="display:none">
+                            <div id='textwr'>What went wrong?</div>
+                            <input id="rate[]" name="rate[]" type="text" placeholder="" class="form-control input-md" style="display:none;">
+                            <input id="rating[]" name="rating[]" type="text" placeholder="" class="form-control input-md rateval" style="display:none;">
+                            <span class="button-checkbox"><button type="button" class="btn criteria" data-color="info">Useful</button><input type="checkbox" class="hidden" /></span>
+                            <span class="button-checkbox"><button type="button" class="btn criteria" data-color="info">Interesting</button><input type="checkbox" class="hidden" /></span>
+                            <span class="button-checkbox"><button type="button" class="btn criteria" data-color="info">Accessible</button><input type="checkbox" class="hidden" /></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <h4>Would you like to provide anymore feedback?</h4>
+            <textarea class="textarea"></textarea>
+            <div class="row">
 
-       <label for="fname">First Name</label>
-       <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <button type="button" class="btn btn-default">Submit</button>
+        </div></h1>
+      </div>
+    </div>
 
-       <label for="lname">Last Name</label>
-       <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-       <label for="Country">Country</label>
-       <select id="country" name="country">
-         <option value="australia">Australia</option>
-         <option value="canada">Canada</option>
-         <option value="usa">USA</option>
-       </select>
 
-       <label for="subject">Subject</label>
-       <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-       <input type="submit" value="Submit">
-
-     </form>
-   </div>
 
     <section class="bg-dark" id="contact">
         <div class="container">
@@ -149,7 +171,14 @@
 
     <!-- Theme JavaScript -->
     <script src="js/creative.min.js"></script>
-
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/star-rating.js" type="text/javascript"></script>
 </body>
 
 </html>
