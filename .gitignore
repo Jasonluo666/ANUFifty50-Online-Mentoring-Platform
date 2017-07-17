@@ -23,5 +23,6 @@ venv/
 ENV/
 nikita_venv/
 winenv/
+Fifty50/
 *.log
 local_settings.py
