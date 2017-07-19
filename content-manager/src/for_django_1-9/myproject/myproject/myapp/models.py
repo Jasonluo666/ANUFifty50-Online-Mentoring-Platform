@@ -23,7 +23,7 @@ class Document(models.Model):
     #week = models.ForeignKey('Week', ) # app name in ###, also is this optional?
     Name = models.CharField(max_length=25, blank=True)
 
-    """Week_1 = 'Week1'
+    Week_1 = 'Week1'
     Week_2 = 'Week2'
     Week_3 = 'Week3'
     Week_4 = 'Week4'
@@ -31,7 +31,7 @@ class Document(models.Model):
     Mentor = 'Mentee'
     Training = 'Training'
 
-    Weekly_Choices = (
+    Week_Choices = (
         (Week_1, 'Week_1'),
         (Week_2, 'Week_2'),
         (Week_2, 'Week_3'),
@@ -42,11 +42,11 @@ class Document(models.Model):
         (Mentee, 'Mentee'),
         (Mentor, 'Mentor'),
         (Training, 'Training')
-    )"""
+    )
 
-    Mentee_Mentor = models.CharField(max_length=25, choices=Week_Choices.choices, default=Mentee, blank=False)
-    Week = models.CharField(max_length=10, choices=Role_Choices.choices, default=Week_1, blank=False)
-    docfile = models.FileField(upload_to='documents/'+ Mentee_Mentor.choice + '/' + 'Mentee') # path may be malformed"""
+    Mentee_Mentor = models.CharField(max_length=25, choices=Week_Choices, default=Mentee, blank=False)
+    Week = models.CharField(max_length=10, choices=Role_Choices, default=Week_1, blank=False)
+    docfile = models.FileField(upload_to='documents/'+ 'mentee' + '/' + 'Mentee') # path may be malformed"""
 #class Document(models.Model):
     #docfile = models.FileField()
     #docfile = models.FileField(upload_to='documents/%Y/%m/%d')
