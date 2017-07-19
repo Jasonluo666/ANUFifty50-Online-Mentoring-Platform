@@ -16,7 +16,7 @@ class Role_Choices(DjangoChoices):
     Mentee = ChoiceItem(1, 'Mentee')
     Mentor = ChoiceItem(2, 'Mentor')
     Training = ChoiceItem(3, 'Training')
-
+"""
 def location(instance, filename):
     if instance.Week == Week_1:
         return 'documents/'+ Week_1 + '/' + 'Mentee' + filename
@@ -26,6 +26,16 @@ def location(instance, filename):
         return 'documents/'+ Week_3 + '/' + 'Mentee' + filename
     elif instance.Week == Week_4:
         return 'documents/'+ Week_4 + '/' + 'Mentee' + filename
+"""
+def location(instance, filename):
+    if Week.choices == Week_1:
+        return os.path.join('documents', 'Week_1', 'Mentee', filename)
+    elif Week.choices == Week_2:
+        return os.path.join('documents', 'Week_2', 'Mentee', filename)
+    elif Week.choices == Week_3:
+        return os.path.join('documents', 'Week_3', 'Mentee', filename)
+    elif Week.choices == Week_4:
+        return os.path.join('documents', 'Week_4', 'Mentee', filename)
 
 class Document(models.Model):
 
