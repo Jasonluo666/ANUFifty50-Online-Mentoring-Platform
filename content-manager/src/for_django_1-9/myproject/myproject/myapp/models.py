@@ -6,7 +6,7 @@ import os, sys
 
 #    week = models.IntegerField()
 #    semester = models.CharField(max_length=16)
-
+'''
 class Week_Choices(DjangoChoices):
     Week_1 = ChoiceItem(1, 'Week1')
     Week_2 = ChoiceItem(2, 'Week2')
@@ -17,16 +17,26 @@ class Role_Choices(DjangoChoices):
     Mentee = ChoiceItem(1, 'Mentee')
     Mentor = ChoiceItem(2, 'Mentor')
     Training = ChoiceItem(3, 'Training')
-
+'''
 def location(instance, filename):
+    '''
     if instance.Weekly_Choices == 'Week1':
-        return 'documents/'+ Week_1 + '/' + 'Mentee' + filename
+        return 'documents/'+ Week1 + '/' + 'Mentee' + filename
     elif instance.Weekly_Choices == 'Week2':
-        return 'documents/'+ Week_2 + '/' + 'Mentee' + filename
+        return 'documents/'+ Week2 + '/' + 'Mentee' + filename
     elif instance.Weekly_Choices == 'Week3':
-        return 'documents/'+ Week_3 + '/' + 'Mentee' + filename
+        return 'documents/'+ Week3 + '/' + 'Mentee' + filename
     elif instance.Weekly_Choices == 'Week4':
-        return 'documents/'+ Week_4 + '/' + 'Mentee' + filename
+        return 'documents/'+ Week4 + '/' + 'Mentee' + filename
+    '''
+    if instance.Week == 'Week1':
+        return 'documents/' + Week_1 + '/' + 'Mentee' + filename
+    elif instance.Week == 'Week2':
+        return 'documents/' + Week_2 + '/' + 'Mentee' + filename
+    elif instance.Week == 'Week3':
+        return 'documents/' + Week_3 + '/' + 'Mentee' + filename
+    elif instance.Week == 'Week4':
+        return 'documents/' + Week_4 + '/' + 'Mentee' + filename
 """
 def location(instance, filename):
     if Week_Choices.choices == 'Week1':
@@ -42,10 +52,8 @@ def location(instance, filename):
 """
 
 class Document(models.Model):
-
     #week = models.ForeignKey('Week', ) # app name in ###, also is this optional?
     Name = models.CharField(max_length=25, blank=True)
-
     Week_1 = 'Week1'
     Week_2 = 'Week2'
     Week_3 = 'Week3'
