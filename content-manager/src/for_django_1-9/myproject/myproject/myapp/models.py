@@ -38,7 +38,7 @@ class Document(models.Model):
         elif instance.Week == 'Week_3' and instance.Role == 'Mentee':
             return os.path.join('documents', 'Week_3', 'Mentee', filename)
         elif instance.Week == 'Week_4' and instance.Role == 'Mentee':
-            return os.path.join('documents', 'Week_1', 'Mentee', filename)
+            return os.path.join('documents', 'Week_4', 'Mentee', filename)
         elif instance.Week == 'Week_1' and instance.Role == 'Mentor':
             return os.path.join('documents', 'Week_1', 'Mentor', filename)
         elif instance.Week == 'Week_2' and instance.Role == 'Mentor':
