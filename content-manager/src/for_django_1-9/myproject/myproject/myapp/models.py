@@ -11,7 +11,7 @@ class Document(models.Model):
     Week_3 = 'Week_3'
     Week_4 = 'Week_4'
     Mentee = 'Mentee'
-    Mentor = 'Mentee'
+    Mentor = 'Mentor'
     Training = 'Training'
 
     Weekly_Choices = (
