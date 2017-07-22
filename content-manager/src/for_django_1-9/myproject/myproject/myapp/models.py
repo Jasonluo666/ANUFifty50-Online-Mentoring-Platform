@@ -1,13 +1,40 @@
-# -*- coding: utf-8 -*-
 from django.db import models
 from djchoices import DjangoChoices, ChoiceItem
 import os, sys
-#class Week(models.Model):
 
-#    week = models.IntegerField()
-#    semester = models.CharField(max_length=16)
-'''
-class Week_Choices(DjangoChoices):
+def location(instance, filename):
+    if Week.instance == 'Week1':
+        return 'documents/' + Week1 + '/' + 'Mentee' + filename
+    elif Week.instance == 'Week2':
+        return 'documents/' + Week2 + '/' + 'Mentee' + filename
+    elif Week.instance == 'Week3':
+        return 'documents/' + Week3 + '/' + 'Mentee' + filename
+    elif Week.instance == 'Week4':
+        return 'documents/' + Week4 + '/' + 'Mentee' + filename
+        
+class Document(models.Model):
+    # Choices
+    class Week_Choices(DjangoChoices):
+        Week1 = ChoiceItem("Week1")
+        Week2 = ChoiceItem("Week2")
+        Week3 = ChoiceItem("Week3")
+        Week4 = ChoiceItem("Week4")
+
+    class Role_Choices(DjangoChoices):
+        Mentee = ChoiceItem("Mentee")
+        Mentor = ChoiceItem("Mentor")
+        Training = ChoiceItem("Training")
+
+    # Fields
+    Name = models.CharField(max_length=25, blank=True)
+    Week_Number = models.CharField(max_length=10, choices=Week_Choices.choices)
+    Mentee_or_Mentor = models.CharField(max_length=25, choices=Role_Choices.choices)
+    docfile = models.FileField(upload_to=location)
+
+
+
+"""
+class Week(DjangoChoices):
     Week_1 = ChoiceItem(1, 'Week1')
     Week_2 = ChoiceItem(2, 'Week2')
     Week_3 = ChoiceItem(3, 'Week3')
@@ -17,39 +44,16 @@ class Role_Choices(DjangoChoices):
     Mentee = ChoiceItem(1, 'Mentee')
     Mentor = ChoiceItem(2, 'Mentor')
     Training = ChoiceItem(3, 'Training')
-'''
+
 def location(instance, filename):
-    '''
-    if instance.Weekly_Choices == 'Week1':
-        return 'documents/'+ Week1 + '/' + 'Mentee' + filename
-    elif instance.Weekly_Choices == 'Week2':
-        return 'documents/'+ Week2 + '/' + 'Mentee' + filename
-    elif instance.Weekly_Choices == 'Week3':
-        return 'documents/'+ Week3 + '/' + 'Mentee' + filename
-    elif instance.Weekly_Choices == 'Week4':
-        return 'documents/'+ Week4 + '/' + 'Mentee' + filename
-    '''
-    if instance.Week == 'Week1':
+    if Week.instance == 'Week1':
         return 'documents/' + Week_1 + '/' + 'Mentee' + filename
-    elif instance.Week == 'Week2':
+    elif Week.instance == 'Week2':
         return 'documents/' + Week_2 + '/' + 'Mentee' + filename
-    elif instance.Week == 'Week3':
+    elif Week.instance == 'Week3':
         return 'documents/' + Week_3 + '/' + 'Mentee' + filename
-    elif instance.Week == 'Week4':
+    elif Week.instance == 'Week4':
         return 'documents/' + Week_4 + '/' + 'Mentee' + filename
-"""
-def location(instance, filename):
-    if Week_Choices.choices == 'Week1':
-        return os.path.join('documents', 'Week_1', 'Mentee', filename)
-    elif Week_Choices.choices == 'Week2':
-        return os.path.join('documents', 'Week_2', 'Mentee', filename)
-    elif Week_Choices.choices == 'Week3':
-        return os.path.join('documents', 'Week_3', 'Mentee', filename)
-    elif Week_Choices.choices == 'Week4':
-        return os.path.join('documents', 'Week_4', 'Mentee', filename)
-    else:
-        return os.path.join('documents', filename)
-"""
 
 class Document(models.Model):
     #week = models.ForeignKey('Week', ) # app name in ###, also is this optional?
@@ -77,14 +81,16 @@ class Document(models.Model):
 
     Mentee_Mentor = models.CharField(max_length=25, choices=Role_Choices, default=Mentee, blank=False)
     Week = models.CharField(max_length=10, choices=Weekly_Choices, default=Week_1, blank=False)
-    #docfile = models.FileField(upload_to='documents/'+ 'mentee' + '/' + 'Mentee') # path may be malformed"""
+    #docfile = models.FileField(upload_to='documents/'+ 'mentee' + '/' + 'Mentee') # path may be malformed
     docfile = models.FileField(upload_to=location)
+"""
 
 
 #class Document(models.Model):
     #docfile = models.FileField()
     #docfile = models.FileField(upload_to='documents/%Y/%m/%d')
-    """name = models.CharField(max_length=25, blank=True)
+"""
+    name = models.CharField(max_length=25, blank=True)
     Week_1 = 'W1'
     Week_2 = 'W2'
     Week_3 = 'W3'
