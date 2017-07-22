@@ -17,8 +17,8 @@ class Document(models.Model):
     Weekly_Choices = (
         (Week_1, 'Week_1'),
         (Week_2, 'Week_2'),
-        (Week_2, 'Week_3'),
-        (Week_2, 'Week_4')
+        (Week_3, 'Week_3'),
+        (Week_4, 'Week_4')
     )
 
     Role_Choices = (
