@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'content',
     'debug_toolbar',
     'pair',
+    'resource_manager',
 ]
 
 MIDDLEWARE = [
