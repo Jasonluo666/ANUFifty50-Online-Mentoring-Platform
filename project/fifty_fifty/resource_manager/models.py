@@ -59,3 +59,6 @@ class Document(models.Model):
             return os.path.join(filename)
 
     docfile = models.FileField(upload_to=choices_location)
+
+    def __str__(self):
+        return self.Filename

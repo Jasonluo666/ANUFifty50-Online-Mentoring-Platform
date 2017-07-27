@@ -110,6 +110,10 @@ aside {
     background-color: rgba(189,24,34,1);
     border-color: rgba(255, 255, 255, 0.0);
   }
+  .navbar-default .homepage-navbar{
+    background-color: rgba(189,24,34,0);
+    border-color: rgba(255, 255, 255, 0.0);
+  }
   .navbar-default .navbar-header .navbar-brand {
     color: rgba(255, 255, 255, 0.7);
   }
