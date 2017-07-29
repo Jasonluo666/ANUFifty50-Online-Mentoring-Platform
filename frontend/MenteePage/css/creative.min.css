@@ -29,6 +29,9 @@ a:hover,
 a:focus {
   color: #eb3812;
 }
+a.about-fifty50-headings, a.about-fifty50-headings:hover, a.about-fifty50-headings:focus {
+  color: white;
+}
 h1,
 h2,
 h3,
@@ -59,6 +62,11 @@ section {
 .contact-footer {
   background-color: black;
   padding: 10px;
+}
+footer {
+  position:fixed;
+  bottom:0;
+  width:100%;
 }
 aside {
   padding: 50px 0;
