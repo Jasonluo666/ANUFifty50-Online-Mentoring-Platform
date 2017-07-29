@@ -29,10 +29,7 @@ a:hover,
 a:focus {
   color: #eb3812;
 }
-a.about-fifty50-headings {
-  color: white;
-}
-a.about-fifty50-headings:hover, a.about-fifty50-headings:focus {
+a.about-fifty50-headings, a.about-fifty50-headings:hover, a.about-fifty50-headings:focus {
   color: white;
 }
 h1,
