@@ -29,6 +29,12 @@ a:hover,
 a:focus {
   color: #eb3812;
 }
+a.about-fifty50-headings {
+  color: white;
+}
+a.about-fifty50-headings:hover, a.about-fifty50-headings:focus {
+  color: white;
+}
 h1,
 h2,
 h3,
@@ -51,6 +57,9 @@ p {
 }
 .text-faded {
   color: rgba(30, 30, 30, 0.7);
+}
+.muted-subtext {
+  color: #c1c1c1;
 }
 section {
   padding: 100px 0;
@@ -157,7 +166,7 @@ header {
   -o-background-size: cover;
   background-position: center;
   /*background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/header.jpg');*/
-  background-image: url('../img/header.jpg');
+  background-image: url('../img/header.jpg');     /*updated header.jpg to new background image*/
   text-align: center;
   color: white;
 }
