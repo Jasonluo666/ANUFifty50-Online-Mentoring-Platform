@@ -29,8 +29,12 @@ a:hover,
 a:focus {
   color: #eb3812;
 }
-a.about-fifty50-headings, a.about-fifty50-headings:hover, a.about-fifty50-headings:focus {
+a.whitelink, a.whitelink:hover, a.whitelink:focus {
   color: white;
+}
+a.blacklink, a.blacklink:hover, a.blacklink:focus {
+  color: black;
+  font-weight:bold;
 }
 h1,
 h2,
