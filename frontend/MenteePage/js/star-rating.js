@@ -120,13 +120,13 @@ $( document ).ready(function() {
     target.children('#textwr').html(' ');
 
 
-    if(value<3){
+    if(value<=3){
      target.css("color","red").show();
      target.children('#textwr').text('What can be improved?');
     }else{
         if(value>3){
             target.css("color","green").show();
-            target.children('#textwr').html('What was done correctly?');
+            target.children('#textwr').html('What was done right?');
         }else{
        target.hide();
         }
