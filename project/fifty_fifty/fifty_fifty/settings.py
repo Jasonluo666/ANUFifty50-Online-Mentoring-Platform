@@ -46,7 +46,6 @@ INSTALLED_APPS = [
     'content',
     'debug_toolbar',
     'pair',
-    'resource_manager',
 ]
 
 MIDDLEWARE = [
@@ -169,3 +168,8 @@ ACCOUNT_LOGOUT_ON_PASSWORD_CHANGE = True
 ACCOUNT_LOGOUT_REDIRECT_URL = '/'
 ACCOUNT_SIGNUP_FORM_CLASS = 'webcore.forms.SignupForm'
 ACCOUNT_LOGOUT_ON_GET = True
+
+# Media files (Images, Videos, Documents)
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
