@@ -54,5 +54,5 @@ wheels/
 *.spec
 .python-version
 *.sqlite3
-fifty_fifty/mydatabase
+/project/fifty_fifty/fifty_fifty/mydatabase
 public/
