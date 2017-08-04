@@ -2,3 +2,4 @@ Django==1.11.1
 django-debug-toolbar==1.8
 django-crispy-forms==1.6.1
 django-allauth==0.32.0
+

@@ -1,6 +1,8 @@
 import os
 from django.db import models
 from django.utils import timezone
+from django.db.models.signals import pre_delete
+from django.dispatch.dispatcher import receiver
 
 
 
@@ -10,6 +12,8 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+    
+
 
 class Mentor(models.Model):
     title = models.CharField(max_length=200)
@@ -31,3 +35,12 @@ class Training(models.Model):
     
     def __str__(self):
         return self.title
+
+@receiver(pre_delete, sender=Post)
+@receiver(pre_delete, sender=Mentor)
+@receiver(pre_delete, sender=Mentee)
+@receiver(pre_delete, sender=Training)
+def delete(sender, instance, **kwargs):
+    # Pass false so FileField doesn't save the model.
+    instance.docfile.delete(False)
+
