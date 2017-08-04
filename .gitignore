@@ -55,3 +55,4 @@ wheels/
 .python-version
 *.sqlite3
 fifty_fifty/mydatabase
+public/
