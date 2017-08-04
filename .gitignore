@@ -53,3 +53,5 @@ wheels/
 *.manifest
 *.spec
 .python-version
+*.sqlite3
+fifty_fifty/mydatabase
