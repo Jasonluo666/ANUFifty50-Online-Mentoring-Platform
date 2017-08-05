@@ -53,3 +53,6 @@ wheels/
 *.manifest
 *.spec
 .python-version
+*.sqlite3
+/project/fifty_fifty/fifty_fifty/mydatabase
+public/
