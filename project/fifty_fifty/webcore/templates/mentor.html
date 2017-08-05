@@ -3,10 +3,8 @@
 
 {% block content %}
 {%include 'nav.html' %}
-    <div class = "container" style ="height:7.5%; width:auto; background-color:#BD1822;">
-    </div>
-<body>
-    <div class="container" style="text-align: center">
+    <div class="container">
+</div>
     <h1><div class="row">
             <div class="row">
                 <h1>How Amazing was your Week?</h1>
@@ -19,7 +17,7 @@
             </div>
             <section>
                 <div class="container">
-                    <h4>How would you rate Fifty50 so far?</h4>
+                    <h4>How would you rate fifty50 so far?</h4>
                     <div class="row lead evaluation">
                         <div id="colorstar" class="starrr ratable badForm"></div>
                         <span id="count">0</span> star(s) -
@@ -28,9 +26,9 @@
                             <div id='textwr'>What went wrong?</div>
                             <input id="rate[]" name="rate[]" type="text" placeholder="" class="form-control input-md" style="display:none;">
                             <input id="rating[]" name="rating[]" type="text" placeholder="" class="form-control input-md rateval" style="display:none;">
-                            <span class="button-checkbox"><button type="button" class="btn criteria" data-color="info">Useful</button><input type="checkbox" class="hidden" /></span>
+                            <span class="button-checkbox"><button type="button" class="btn criteria" data-color="info">Usefull</button><input type="checkbox" class="hidden" /></span>
                             <span class="button-checkbox"><button type="button" class="btn criteria" data-color="info">Interesting</button><input type="checkbox" class="hidden" /></span>
-                            <span class="button-checkbox"><button type="button" class="btn criteria" data-color="info">Accessible</button><input type="checkbox" class="hidden" /></span>
+                            <span class="button-checkbox"><button type="button" class="btn criteria" data-color="info">Accessable</button><input type="checkbox" class="hidden" /></span>
                         </div>
                     </div>
                 </div>
@@ -38,11 +36,9 @@
             <h4>Would you like to provide anymore feedback?</h4>
             <textarea class="textarea"></textarea>
             <div class="row">
-
+</div>
             <button type="button" class="btn btn-default">Submit</button>
         </div></h1>
-      </div>
-    </div>
 
 
 
@@ -62,19 +58,6 @@
         </div>
     </section>
 
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/creative.min.js"></script>
 
     <!-- jQuery -->
     <script src={% static "vendor/jquery/jquery.min.js" %}></script>
@@ -86,16 +69,32 @@
     <script src={% static "vendor/magnific-popup/jquery.magnific-popup.min.js" %}></script>
     <!-- Theme JavaScript -->
     <script src={% static "js/creative.min.js" %}></script>
-    <!-- jQuery -->
-    <script src={% static "vendor/jquery/jquery.min.js" %}></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src={% static "vendor/bootstrap/js/bootstrap.min.js" %}></script>
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src={% static "vendor/scrollreveal/scrollreveal.min.js" %}></script>
-    <script src={% static "vendor/magnific-popup/jquery.magnific-popup.min.js" %}></script>
-    <!-- Theme JavaScript -->
-    <script src={% static "js/creative.min.js" %}></script>
+
+    <!-- NEED THIS-->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src={% static "assets/js/jquery.min.js" %}></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src={% static "assets/js/ie10-viewport-bug-workaround.js" %}></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src={% static "bootstrap/js/star-rating.js" %} type="text/javascript"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href={% static "bootstrap/css/bootstrap.css" %} rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href={% static "style.css" %} rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+
+<!-- CUSTOM CODE -->
+    <link href={% static "bootstrap/css/star-rating.css" %} media="all" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- CUSTOM CODE -->
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
 
 
 {% endblock %}
