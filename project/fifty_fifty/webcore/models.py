@@ -14,6 +14,11 @@ DEGREE_PROGRAMME = (
     ('Mathematics', 'Mathematics')
 )
 
+ROLES = (
+    ('Mentee', 'Mentee'),
+    ('Mentor', 'Mentor'),
+)
+
 DEGREE_MAJOR = (
     ('MAJOR1', 'MAJOR1'),
     ('MAJOR2', 'MAJOR2'),
@@ -37,6 +42,7 @@ MENTOR_GENDER = (
 
 
 class Profile(models.Model):
+    role = models.CharField(max_length=15, null = True ,choices=ROLES)
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     uniId = models.CharField(max_length=100)
     study_year = models.IntegerField(null = True, validators=[MinValueValidator(2000), MaxValueValidator(2017)])
