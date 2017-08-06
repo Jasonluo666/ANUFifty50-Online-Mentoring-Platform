@@ -7,7 +7,12 @@ DEGREE_PROGRAMME = (
     ('Science', 'Science'),
     ('Technology', 'Technology'),
     ('Engineering','Engineering'),
-    ('Mathematics', 'Mathematics')
+    ('Mathematics', 'Mathematics'),
+)
+
+ROLES = (
+    ('Mentee', 'Mentee'),
+    ('Mentor', 'Mentor'),
 )
 
 DEGREE_MAJOR = (
@@ -31,6 +36,7 @@ MENTOR_GENDER = (
 )
 
 class SignupForm(forms.Form):
+    role = forms.ChoiceField(choices=ROLES, widget=forms.RadioSelect(attrs={'onclick': 'teetorCheck();'}), label='Would you like to register as a')
     first_name = forms.CharField(max_length=30, label='First Name')
     last_name = forms.CharField(max_length=30, label='Last Name')
     uniId = forms.CharField(max_length=100, label='University ID')
@@ -45,10 +51,12 @@ class SignupForm(forms.Form):
     hear_about = forms.CharField(max_length=150, widget=forms.Textarea, required = False, label='How did you hear about this program?')
 
     def signup(self, request, user):
+
         user.first_name = self.cleaned_data['first_name']
         user.last_name = self.cleaned_data['last_name']
 
 
+        user.profile.role = self.cleaned_data['role']
         user.profile.uniId = self.cleaned_data['uniId']
         user.profile.study_year = self.cleaned_data['study_year']
         user.profile.degree_programme = self.cleaned_data['degree_programme']
