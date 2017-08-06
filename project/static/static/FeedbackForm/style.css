@@ -1,0 +1,15 @@
+
+
+.row
+{
+    text-align: center;
+    width: 100%;
+    color: rgb(48, 152, 181);
+    background-color: #dfd9d9;
+}
+
+.textarea
+{
+    width: 60%;
+}
+
