@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="img/logo.png">
+    <link rel="icon" href={% static "MenteePage/img/logo.png" %}>
 
     <title>Fifty50 Mentoring Program</title>
 
@@ -73,7 +73,7 @@
     <a class="page-scroll" href="contact.html">Contact Us</a>
 </li>
                                         <li>
-                        <a class="page-scroll" href="#signout">Sign Out</a>
+                        <a class="page-scroll" href="{% url 'account_logout' %}">Logout</a>
                     </li>
                     <li>
                      <a class="page-scroll" href="profile.html">My Profile <img src={% static "MenteePage/img/unnamed.png" %} style="height:25px;width:25px; border-radius: 50%"></a>
