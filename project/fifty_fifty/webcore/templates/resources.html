@@ -93,9 +93,20 @@
           <h2 class="section-heading">Resources</h2>
           <hr>
           
+          
+          
+          
           <!-- Reference links in the line bellow -->
            <p class="text-muted">News</p>
-           <a href="/media/news/Django_Integration_Test.pdf/">Django Integration Test</a>
+           {% for post in post_list %}
+           <a href="/media/{{post.docfile}}">{{post.title}}</a>
+           {% endfor %}
+
+            
+           
+           
+           
+           
           <p class="text-muted">Check out some of these resources for more info on the program!</p>
       </div>
         <div class="row no-gutter">

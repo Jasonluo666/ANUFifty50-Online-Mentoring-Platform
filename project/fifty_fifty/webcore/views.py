@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
+from content.models import Post
+#from content
 
 # Create your views here.
 def home(request):
@@ -32,7 +34,7 @@ def userProfileMentor(request):
 @login_required
 def userProfileResources(request):
     user = request.user
-    context = {'user':user}
+    context = {'user':user, 'post_list':Post.objects.all()}
     template = 'resources.html'
     return render(request,template,context)
 
@@ -63,3 +65,6 @@ def userProfileContact(request):
     context = {'user':user}
     template = 'contact.html'
     return render(request,template,context)
+
+
+
