@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends "account/base.html" %}
 {% load crispy_forms_tags %}
 {% load staticfiles %}
 
@@ -39,13 +39,11 @@
 
 <p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
 
-<p>{% blocktrans %}Would you like to register as a{% endblocktrans %}</p>
-
-<p>{% blocktrans %}Mentee {% endblocktrans %}<input type="radio" onclick="javascript:teetorCheck();" name="mm" id="teeCheck"/>
-{% blocktrans %}&nbsp;&nbsp;&nbsp;&nbsp;Mentor {% endblocktrans %}<input type="radio" onclick="javascript:teetorCheck();" name="mm" id="torCheck"/></p>
-
+<p>
 <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
+
   {% csrf_token %}
+  {{ form.role|as_crispy_field }}
   {{ form.first_name|as_crispy_field }}
   {{ form.last_name|as_crispy_field }}
   {{ form.uniId|as_crispy_field }}
@@ -55,13 +53,13 @@
   {{ form.gender|as_crispy_field }}
   {{ form.mentor_gender|as_crispy_field }}
 </div>
-  <div id="ifYes" style="display:none"  class= 'col-md-4 col-md-offset-4' >
+<div id="ifYes" style="display:none"  class= 'col-md-4 col-md-offset-4' >
   {{ form.why_mentor|as_crispy_field }}
   {{ form.why_div_equ_inc|as_crispy_field }}
   {{ form.mentee_number|as_crispy_field }}
   {{ form.hear_about|as_crispy_field }}
-  </div>
-  <div class= 'col-md-4 col-md-offset-4' >
+</div>
+<div class= 'col-md-4 col-md-offset-4' >
   {{ form.email|as_crispy_field }}
   {{ form.password1|as_crispy_field }}
   {{ form.password2|as_crispy_field }}
@@ -74,13 +72,13 @@
 </div>
 
 <script type="text/javascript">
-
-function teetorCheck() {
-    if (document.getElementById('teeCheck').checked) {
-        document.getElementById('ifYes').style.display = 'none';
-    } else {
+ function teetorCheck() {
+    if (document.getElementById("id_role_2").checked) {
         document.getElementById('ifYes').style.display = 'block';
     }
-  }
+    else {
+        document.getElementById('ifYes').style.display = 'none';
+    }
+}
 </script>
 {% endblock %}

@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="img/logo.png">
+    <link rel="icon" href={% static "MenteePage/img/logo.png" %}>
 
     <title>Fifty50 Mentoring Program</title>
 
@@ -90,6 +90,21 @@
       <div class="col-lg-8 col-lg-offset-2 text-center" style="padding-top:100px;padding-bottom:15px;">
           <h2 class="section-heading">Resources</h2>
           <hr>
+          
+          
+          
+          
+          <!-- Reference links in the line bellow -->
+           <p class="text-muted">News</p>
+           {% for post in post_list %}
+           <a href="/media/{{post.docfile}}">{{post.title}}</a>
+           {% endfor %}
+
+            
+           
+           
+           
+           
           <p class="text-muted">Check out some of these resources for more info on the program!</p>
       </div>
         <div class="row no-gutter">
