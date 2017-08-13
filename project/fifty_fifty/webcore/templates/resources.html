@@ -90,21 +90,30 @@
       <div class="col-lg-8 col-lg-offset-2 text-center" style="padding-top:100px;padding-bottom:15px;">
           <h2 class="section-heading">Resources</h2>
           <hr>
-          
-          
-          
-          
+
+
+
+
           <!-- Reference links in the line bellow -->
            <p class="text-muted">News</p>
            {% for post in post_list %}
            <a href="/media/{{post.docfile}}">{{post.title}}</a>
            {% endfor %}
+           {% for mentee in mentee_list %}
+           <a href="/media/{{mentee.docfile}}">{{mentee.title}}</a>
+           {% endfor %}
+           {% for mentor in mentor_list %}
+           <a href="/media/{{mentor.docfile}}">{{mentor.title}}</a>
+           {% endfor %}
+           {% for training in training_list %}
+           <a href="/media/{{training.docfile}}">{{training.title}}</a>
+           {% endfor %}
 
-            
-           
-           
-           
-           
+
+
+
+
+
           <p class="text-muted">Check out some of these resources for more info on the program!</p>
       </div>
         <div class="row no-gutter">
