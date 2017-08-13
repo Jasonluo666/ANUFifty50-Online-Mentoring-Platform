@@ -39,6 +39,17 @@
             .form {
                 margin-bottom: 60px;
             }
+
+            input[type=submit] {
+                color: white;
+                background-color: rgba(246, 139, 35, 1);
+                border-radius: 300px;
+                padding: 15px 30px;
+            }
+
+            input[type=submit]:hover {
+                background-color: rgba(189, 24, 34, 1);
+            }
         </style>
 
     </head>
@@ -114,7 +125,7 @@
                <label for="subject">Subject</label>
                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
-               <input type="submit" value="Submit">
+               <input type="submit" value="Submit" class="btn btn-primary btn-xl sr-button">
 
             </form>
         </div>
