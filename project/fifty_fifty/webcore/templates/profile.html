@@ -4,51 +4,120 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+    <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href={% static "MenteePage/img/logo.png" %}>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="img/logo.png">
 
-    <title>Fifty50 Mentoring Program</title>
+        <title>Fifty50 Mentoring Program</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href={% static "MenteePage/vendor/bootstrap/css/bootstrap.min.css" %} rel="stylesheet">
+        <!-- Bootstrap Core CSS -->
+        <link href={% static "MenteePage/vendor/bootstrap/css/bootstrap.min.css" %} rel="stylesheet">
 
-    <!-- Custom Fonts -->
-    <link href={% static "MenteePage/vendor/font-awesome/css/font-awesome.min.css" %} rel="stylesheet" type="text/css">
-    <!-- Plugin CSS -->
-    <link href={% static "MenteePage/vendor/magnific-popup/magnific-popup.css" %} rel="stylesheet">
+        <!-- Custom Fonts -->
+        <link href={% static "MenteePage/vendor/font-awesome/css/font-awesome.min.css" %} rel="stylesheet" type="text/css">
+        <!-- Plugin CSS -->
+        <link href={% static "MenteePage/vendor/magnific-popup/magnific-popup.css" %} rel="stylesheet">
 
-    <!-- Theme CSS -->
-    <link href={% static "MenteePage/css/creative.min.css" %} rel="stylesheet">
+        <!-- Theme CSS -->
+        <link href={% static "MenteePage/css/creative.min.css" %} rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 
-    <![endif]-->
+        <![endif]-->
 
 
-</head>
+    </head>
+    <body>
+        <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="menteelogin.html">
+                      Fifty50 Mentoring
+                    </a>
+                </div>
 
-<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="menteelogin.html">
-                  Fifty50 Mentoring
-                </a>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a class="page-scroll" href=content.html>Training & Content</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="news.html">News & Events</a>
+                        </li>
+
+                           <li>
+                             <a class="page-scroll" href="mentor.html">My Mentor</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="resources.html">Resources</a>       <!-- login -->
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="FAQ.html">FAQ & Help</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="contact.html">Contact Us</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#signout">Sign Out</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="profile.html">My Profile <img src={% static "MenteePage/img/unnamed.png" %} style="height:25px;width:25px; border-radius: 50%"></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
             </div>
+            <!-- /.container-fluid -->
+        </nav>
 
+        <div class="container" style="position:relative; margin-top:10%;">
+            <div class="jumbotron">
+                <div class="row">
+                    <div class="col-md-4 col-xs-12 col-sm-6 col-lg-4">
+                        <img src="https://www.svgimages.com/svg-image/s5/man-passportsize-silhouette-icon-256x256.png" alt="stack photo" class="img">
+                    </div>
+                    <div class="col-md-8 col-xs-12 col-sm-6 col-lg-8">
+                        <div class="container" style="border-bottom:1px solid black">
+                            <h2>John Doe</h2>
+                        </div>
+                        <hr>
+                        <ul class="container details">
+                            <li><p><span class="glyphicon glyphicon-earphone one" style="width:50px;"></span>+91 90000 00000</p></li>
+                            <li><p><span class="glyphicon glyphicon-envelope one" style="width:50px;"></span>somerandom@email.com</p></li>
+                            <li><p><span class="glyphicon glyphicon-map-marker one" style="width:50px;"></span>Hyderabad</p></li>
+                            <li><p><span class="glyphicon glyphicon-new-window one" style="width:50px;"></span><a href="#">www.example.com</p></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+<<<<<<< HEAD
+        <footer class="contact-footer">
+            <div style="text-align:center;">
+                <span style="color:white;">Contact Us:</span>
+                <div style="padding-right:15px;"></div>
+                <a href="https://www.instagram.com/anu_fifty50/" style="margin-right:15px;"><i class="fa fa-lg fa-instagram text-primary sr-contact"></i></a>
+                <a href="contact.html" style="margin-right:15px;"><i class="fa fa-lg fa-envelope-o text-primary sr-contact"></i></a>
+                <a href="https://www.facebook.com/ANUFifty50STEM/" style="margin-right:15px;"><i class="fa fa-lg fa-facebook-official text-primary sr-contact"></i></a>
+                <a href="https://twitter.com/anu_Fifty50"><i class="fa fa-lg fa-twitter text-primary sr-contact"></i></a>   <!-- added fa-twitter icon -->
+=======
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
@@ -80,75 +149,39 @@
 
 
                 </ul>
+>>>>>>> 2974842eb5b59b6b8514cd4a070f8d6a879797c2
             </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
+        </footer>
 
-<div class="container" style="position:relative; margin-top:10%;">
-    <div class="jumbotron">
-      <div class="row">
-          <div class="col-md-4 col-xs-12 col-sm-6 col-lg-4">
-              <img src="https://www.svgimages.com/svg-image/s5/man-passportsize-silhouette-icon-256x256.png" alt="stack photo" class="img">
-          </div>
-          <div class="col-md-8 col-xs-12 col-sm-6 col-lg-8">
-              <div class="container" style="border-bottom:1px solid black">
-                <h2>John Doe</h2>
-              </div>
-                <hr>
-              <ul class="container details">
-                <li><p><span class="glyphicon glyphicon-earphone one" style="width:50px;"></span>+91 90000 00000</p></li>
-                <li><p><span class="glyphicon glyphicon-envelope one" style="width:50px;"></span>somerandom@email.com</p></li>
-                <li><p><span class="glyphicon glyphicon-map-marker one" style="width:50px;"></span>Hyderabad</p></li>
-                <li><p><span class="glyphicon glyphicon-new-window one" style="width:50px;"></span><a href="#">www.example.com</p></a>
-              </ul>
-          </div>
-      </div>
-    </div>
+        <!-- jQuery -->
+        <script src={% static "MenteePage/vendor/jquery/jquery.min.js" %}></script>
 
+        <!-- Bootstrap Core JavaScript -->
+        <script src={% static "MenteePage/vendor/bootstrap/js/bootstrap.min.js" %}></script>
 
+        <!-- Plugin JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+        <script src={% static "MenteePage/vendor/scrollreveal/scrollreveal.min.js" %}></script>
+        <script src={% static "MenteePage/vendor/magnific-popup/jquery.magnific-popup.min.js" %}></script>
 
-    <footer class="contact-footer">
-                <div style="text-align:center;">
-                        <span style="color:white;">Contact Us:</span>
-                        <div style="padding-right:15px;"></div>
-                        <a href="https://www.instagram.com/anu_fifty50/" style="margin-right:15px;"><i class="fa fa-lg fa-instagram text-primary sr-contact"></i></a>
-                        <a href="contact.html" style="margin-right:15px;"><i class="fa fa-lg fa-envelope-o text-primary sr-contact"></i></a>
-                        <a href="https://www.facebook.com/ANUFifty50STEM/" style="margin-right:15px;"><i class="fa fa-lg fa-facebook-official text-primary sr-contact"></i></a>
-                        <a href="https://twitter.com/anu_Fifty50"><i class="fa fa-lg fa-twitter text-primary sr-contact"></i></a>   <!-- added fa-twitter icon -->
-                </div>
-    </footer>
+        <!-- Theme JavaScript -->
+        <script src={% static "MenteePage/js/creative.min.js" %}></script>
 
-    <!-- jQuery -->
-    <script src={% static "MenteePage/vendor/jquery/jquery.min.js" %}></script>
+        <!-- jQuery -->
+        <script src={% static "MenteePage/vendor/jquery/jquery.min.js" $}></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src={% static "MenteePage/vendor/bootstrap/js/bootstrap.min.js" %}></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src={% static "MenteePage/vendor/bootstrap/js/bootstrap.min.js" %}></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src={% static "MenteePage/vendor/scrollreveal/scrollreveal.min.js" %}></script>
-    <script src={% static "MenteePage/vendor/magnific-popup/jquery.magnific-popup.min.js" %}></script>
+        <!-- Plugin JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+        <script src={% static "MenteePage/vendor/scrollreveal/scrollreveal.min.js" %}></script>
+        <script src={% static "MenteePage/vendor/magnific-popup/jquery.magnific-popup.min.js" %}></script>
 
-    <!-- Theme JavaScript -->
-    <script src={% static "MenteePage/js/creative.min.js" %}></script>
+        <!-- Theme JavaScript -->
+        <script src={% static "MenteePage/js/creative.min.js" %}></script>
 
-    <!-- jQuery -->
-    <script src={% static "MenteePage/vendor/jquery/jquery.min.js" $}></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src={% static "MenteePage/vendor/bootstrap/js/bootstrap.min.js" %}></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src={% static "MenteePage/vendor/scrollreveal/scrollreveal.min.js" %}></script>
-    <script src={% static "MenteePage/vendor/magnific-popup/jquery.magnific-popup.min.js" %}></script>
-
-    <!-- Theme JavaScript -->
-    <script src={% static "MenteePage/js/creative.min.js" %}></script>
-
-</body>
+    </body>
 
 </html>
 {% endblock %}
