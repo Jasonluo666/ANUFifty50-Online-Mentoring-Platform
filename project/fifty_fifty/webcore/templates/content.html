@@ -95,22 +95,35 @@
                     <li><a href="#tab-4" role="tab" data-toggle="tab">Week 7</a></li>
                     <li><a href="#tab-5" role="tab" data-toggle="tab">Week 9</a></li>
                     <li><a href="#tab-6" role="tab" data-toggle="tab">Week 11</a></li> -->
-                </ul>
-            </div>
-
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
                   {% for mentee in mentee_list %}
                     <li>
-                      <a class="page-scroll" href="/media/{{mentee.docfile}}">{{mentee.title}}</a>
+                      <a href="tab-+{{mentee.title}}" role="tab" data-toggle="tab">{{mentee.title}}</a>
                     </li>
                     {% endfor %}
-
-
                 </ul>
             </div>
 
-</div>
+
+
+              {% for mentee in mentee_list %}
+                <div class="tab-pane" role="tabpanel" id ="tab-+{{mentee.title}}">
+                  id
+                  <section id ="menteeContent">
+                  <div class="container">
+                    <div class="col-sm-12 text-center">
+                      <h2 class="section-heading">{{mentee.title}}</h2>
+                      <hr>
+                      <embed src="/media/{{mentee.docfile}}" width="maxWidth" height="375" type='application/pdf'>
+                    </div>
+                  </div>
+                </section>
+                </div>
+
+              {% endfor %}
+
+
+
+
                 <!--<div class="tab-pane" role="tabpanel" id="tab-0">
                     <section id="weeklycontent">
                         <div class="container">
