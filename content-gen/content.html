@@ -35,7 +35,7 @@
         <![endif]-->
 
     </head>
-    <body onload="onInit()">
+    <body onload="MenteeOnInit()">
         <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -111,7 +111,7 @@
                                               Et cetero fabulas pri. Eam an cetero sapientem salutatus, vim eu malis tibique delicatissimi. Ex oporteat complectitur vim. Et cum nisl facilis complectitur, sit sanctus habemus theophrastus in... </p>
                                     </div>
                                     <div class="col-sm-6">
-                                        <img src={% static "MenteePage/img/newsphotos.jpg" %} style="max-width:100%;"></img>  <!-- added photo for decoration ********** 
+                                        <img src={% static "MenteePage/img/newsphotos.jpg" %} style="max-width:100%;"></img>  <!-- added photo for decoration **********
                                     </div>
                                 </div>
                             </div>
@@ -130,7 +130,7 @@
                                             Et cetero fabulas pri. Eam an cetero sapientem salutatus, vim eu malis tibique delicatissimi. Ex oporteat complectitur vim. Et cum nisl facilis complectitur, sit sanctus habemus theophrastus in... </p>
                                     </div>
                                     <div class="col-sm-6">
-                                        <img src={% static "MenteePage/img/newsphotos.jpg" %} style="max-width:100%;"></img>  <!-- added photo for decoration ********** 
+                                        <img src={% static "MenteePage/img/newsphotos.jpg" %} style="max-width:100%;"></img>  <!-- added photo for decoration **********
                                     </div>
                                 </div>
                             </div>
@@ -149,7 +149,7 @@
                                             Et cetero fabulas pri. Eam an cetero sapientem salutatus, vim eu malis tibique delicatissimi. Ex oporteat complectitur vim. Et cum nisl facilis complectitur, sit sanctus habemus theophrastus in... </p>
                                     </div>
                                     <div class="col-sm-6">
-                                        <img src={% static "MenteePage/img/newsphotos.jpg" %} style="max-width:100%;"></img>  <!-- added photo for decoration ********** 
+                                        <img src={% static "MenteePage/img/newsphotos.jpg" %} style="max-width:100%;"></img>  <!-- added photo for decoration **********
                                     </div>
                                 </div>
                             </div>
@@ -168,7 +168,7 @@
                                             Et cetero fabulas pri. Eam an cetero sapientem salutatus, vim eu malis tibique delicatissimi. Ex oporteat complectitur vim. Et cum nisl facilis complectitur, sit sanctus habemus theophrastus in... </p>
                                     </div>
                                     <div class="col-sm-6">
-                                        <img src={% static "MenteePage/img/newsphotos.jpg" %} style="max-width:100%;"></img>  <!-- added photo for decoration ********** 
+                                        <img src={% static "MenteePage/img/newsphotos.jpg" %} style="max-width:100%;"></img>  <!-- added photo for decoration **********
                                     </div>
                                 </div>
                             </div>
@@ -187,7 +187,7 @@
                                             Et cetero fabulas pri. Eam an cetero sapientem salutatus, vim eu malis tibique delicatissimi. Ex oporteat complectitur vim. Et cum nisl facilis complectitur, sit sanctus habemus theophrastus in... </p>
                                     </div>
                                     <div class="col-sm-6">
-                                        <img src={% static "MenteePage/img/newsphotos.jpg" %} style="max-width:100%;"></img>  <!-- added photo for decoration ********** 
+                                        <img src={% static "MenteePage/img/newsphotos.jpg" %} style="max-width:100%;"></img>  <!-- added photo for decoration **********
                                     </div>
                                 </div>
                             </div>
@@ -206,7 +206,7 @@
                                             Et cetero fabulas pri. Eam an cetero sapientem salutatus, vim eu malis tibique delicatissimi. Ex oporteat complectitur vim. Et cum nisl facilis complectitur, sit sanctus habemus theophrastus in... </p>
                                     </div>
                                     <div class="col-sm-6">
-                                        <img src={% static "MenteePage/img/newsphotos.jpg" %} style="max-width:100%;"></img>  <!-- added photo for decoration ********** 
+                                        <img src={% static "MenteePage/img/newsphotos.jpg" %} style="max-width:100%;"></img>  <!-- added photo for decoration **********
                                     </div>
                                 </div>
                             </div>
@@ -225,7 +225,7 @@
                                             Et cetero fabulas pri. Eam an cetero sapientem salutatus, vim eu malis tibique delicatissimi. Ex oporteat complectitur vim. Et cum nisl facilis complectitur, sit sanctus habemus theophrastus in... </p>
                                     </div>
                                     <div class="col-sm-6">
-                                        <img src={% static "MenteePage/img/newsphotos.jpg" %} style="max-width:100%;"></img>  <!-- added photo for decoration ********** 
+                                        <img src={% static "MenteePage/img/newsphotos.jpg" %} style="max-width:100%;"></img>  <!-- added photo for decoration **********
                                     </div>
                                 </div>
                             </div>
@@ -250,13 +250,17 @@
 
 
         <script>
-            function onInit() {
+            function MenteeOnInit() {
+              var count = 0;
+              {% for mentee in mentee_list %}
+
                 var tabNav = document.getElementsByClassName("tab-content");
 
                 var tab = document.createElement("div");
                 tab.setAttribute("class", "tab-pane");
                 tab.setAttribute("role", "tabpanel");
-                tab.setAttribute("id", "tab-0");
+                var tab_id = new String("tab-"+count);
+                tab.setAttribute("id", tab_id);
 
                 var sect = document.createElement("section");
                 sect.setAttribute("class", "weeklycontent");
@@ -280,7 +284,7 @@
                 tabTextContainer.style.textAlign = "justify";
 
                 var par = document.createElement("p");
-                par.appendChild(document.createTextNode("Lorem ipsum dolor sit amet, graece quaestio sapientem te mei. Ad justo munere consectetuer quo, eirmod eripuit quo ei. Vel ullum omnium ocurreret no, ut sit graece melius lobortis, cu docendi contentiones has. No sea odio nusquam. Ei dico erat repudiandae eum, laoreet recusabo est ea, nec agam illum ridens at. Ignota delicata indoctum vim ea."));
+                par.appendChild(document.createTextNode(tab_id));
 
                 var tabImgContainer = document.createElement("div");
                 tabImgContainer.setAttribute("class", "col-sm-6");
@@ -290,7 +294,7 @@
                 img.style.maxWidth = "100%";
 
 
-                 // Putting elements together 
+                 // Putting elements together
                 tabTextContainer.appendChild(par);
                 tabImgContainer.appendChild(img);
 
@@ -312,13 +316,17 @@
                 // tab nav list
                 var li1 = document.createElement("li");
                 var a1 = document.createElement("a");
-                a1.setAttribute("href", "#tab-0");
+                a1.setAttribute("href", "#"+tab_id);
                 a1.setAttribute("role", "tab");
                 a1.setAttribute("data-toggle", "tab");
                 a1.innerHTML = "Training";
 
                 li1.appendChild(a1);
                 document.getElementsByClassName("nav-tabs")[0].appendChild(li1);
+
+                count=count+1;
+
+                {% endfor %}
             }
         </script>
 
