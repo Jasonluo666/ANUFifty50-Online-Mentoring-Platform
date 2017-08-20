@@ -35,7 +35,7 @@
         <![endif]-->
 
     </head>
-    <body >
+    <body onload="onInit()">
         <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -98,19 +98,7 @@
                 </ul>
             </div>
 
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                  {% for mentee in mentee_list %}
-                    <li>
-                      <a class="page-scroll" href="/media/{{mentee.docfile}}">{{mentee.title}}</a>
-                    </li>
-                    {% endfor %}
-
-
-                </ul>
-            </div>
-
-</div>
+            <div class="tab-content">
                 <!--<div class="tab-pane" role="tabpanel" id="tab-0">
                     <section id="weeklycontent">
                         <div class="container">
@@ -259,6 +247,7 @@
                 <a href="https://twitter.com/anu_Fifty50"><i class="fa fa-lg fa-twitter text-primary sr-contact"></i></a>   <!-- added fa-twitter icon -->
             </div>
         </footer>
+
 
         <script>
             function onInit() {

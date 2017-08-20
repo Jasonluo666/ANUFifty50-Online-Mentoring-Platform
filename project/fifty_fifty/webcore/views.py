@@ -55,7 +55,7 @@ def userProfileProfile(request):
 @login_required
 def userProfileContent(request):
     user = request.user
-    context = {'user':user}
+    context = {'user':user, 'mentee_list':Mentee.objects.all()}
     template = 'content.html'
     return render(request,template,context)
 
