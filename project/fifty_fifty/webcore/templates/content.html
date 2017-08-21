@@ -76,8 +76,6 @@
                         <li>
                          <a class="page-scroll" href="profile.html">My Profile <img src={% static "MenteePage/img/unnamed.png" %} style="height:25px;width:25px; border-radius: 50%"></a>
                      </li>
-
-
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -94,23 +92,49 @@
                     <li><a href="#tab-3" role="tab" data-toggle="tab">Week 5</a></li>
                     <li><a href="#tab-4" role="tab" data-toggle="tab">Week 7</a></li>
                     <li><a href="#tab-5" role="tab" data-toggle="tab">Week 9</a></li>
+
                     <li><a href="#tab-6" role="tab" data-toggle="tab">Week 11</a></li>
                 </ul>
             </div>
 
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
+
+                    <li><a href="#tab-6" role="tab" data-toggle="tab">Week 11</a></li>
+
                   {% for mentee in mentee_list %}
                     <li>
-                      <a class="page-scroll" href="/media/{{mentee.docfile}}">{{mentee.title}}</a>
+                      <a href="tab-+{{mentee.title}}" role="tab" data-toggle="tab">{{mentee.title}}</a>
                     </li>
                     {% endfor %}
-
-
                 </ul>
-            </div>
+            </div> -->
+
 
         </div>
+                <!-- <div class="tab-pane" role="tabpanel" id="tab-0"> -->
+
+
+
+              <!-- {% for mentee in mentee_list %}
+                <div class="tab-pane" role="tabpanel" id ="tab-+{{mentee.title}}">
+                  id
+                  <section id ="menteeContent">
+                  <div class="container">
+                    <div class="col-sm-12 text-center">
+                      <h2 class="section-heading">{{mentee.title}}</h2>
+                      <hr>
+                      <embed src="/media/{{mentee.docfile}}" width="maxWidth" height="375" type='application/pdf'>
+                    </div>
+                  </div>
+                </section>
+                </div>
+
+              {% endfor %} -->
+
+
+        <div>
+            <div class="tab-content">
                 <div class="tab-pane" role="tabpanel" id="tab-0">
                     <section id="weeklycontent">
                         <div class="container">
@@ -149,7 +173,7 @@
                         </div>
                     </section>
                 </div>
-                 <div class="tab-pane" role="tabpanel" id="tab-2">
+                <div class="tab-pane" role="tabpanel" id="tab-2">
                     <section id="weeklycontent">
                         <div class="container">
                             <div class="col-sm-12 text-center">
@@ -168,7 +192,7 @@
                         </div>
                     </section>
                 </div>
-                 <div class="tab-pane" role="tabpanel" id="tab-3">
+                <div class="tab-pane" role="tabpanel" id="tab-3">
                     <section id="weeklycontent">
                         <div class="container">
                             <div class="col-sm-12 text-center">
@@ -187,7 +211,7 @@
                         </div>
                     </section>
                 </div>
-                 <div class="tab-pane" role="tabpanel" id="tab-4">
+                <div class="tab-pane" role="tabpanel" id="tab-4">
                     <section id="weeklycontent">
                         <div class="container">
                             <div class="col-sm-12 text-center">
@@ -206,7 +230,7 @@
                         </div>
                     </section>
                 </div>
-                 <div class="tab-pane" role="tabpanel" id="tab-5">
+                <div class="tab-pane" role="tabpanel" id="tab-5">
                     <section id="weeklycontent">
                         <div class="container">
                             <div class="col-sm-12 text-center">
@@ -225,7 +249,7 @@
                         </div>
                     </section>
                 </div>
-                 <div class="tab-pane" role="tabpanel" id="tab-6">
+                <div class="tab-pane" role="tabpanel" id="tab-6">
                     <section id="weeklycontent">
                         <div class="container">
                             <div class="col-sm-12 text-center">
