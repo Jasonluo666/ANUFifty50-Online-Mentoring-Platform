@@ -7,6 +7,7 @@ from django.core.validators import RegexValidator
 from django.core.validators import MinValueValidator
 from django.core.validators import MaxValueValidator
 
+
 DEGREE_PROGRAMME = (
     ('Science', 'Science'),
     ('Technology', 'Technology'),
@@ -54,10 +55,32 @@ class Profile(models.Model):
     why_div_equ_inc = models.CharField(max_length=150, null = True)
     mentee_number = models.IntegerField(default = 0, validators=[MinValueValidator(0), MaxValueValidator(3)])
     hear_about = models.CharField(max_length=150, null = True)
+    paired_with = models.CharField(max_length=50, null = True)
+
 
     def __str__(self):
-       return 'University ID ' + str(self.uniId)
+       return str(self.role)+ " "+ str(self.uniId)
 
+class Xpairs(models.Model):
+    mentee = models.ForeignKey(Profile, related_name="Xmentees", limit_choices_to={'role': 'Mentee'},)
+    mentor = models.ForeignKey(Profile, related_name="Xmentors", limit_choices_to={'role': 'Mentor'})
+    name = models.CharField(max_length=50, help_text='Enter a unique pair name',blank=True, null = True)
+
+    def save(self, *args, **kwargs):
+        self.name = str(self.mentee) +" -> "+ str(self.mentor)
+        self.shortcode = transfer(str(self.mentee),str(self.mentor))
+        super(Xpairs, self).save(*args, **kwargs)
+
+    def __str__(self):
+       return str(self.mentee) +" -> "+ str(self.mentor)
+
+
+
+def transfer(tee,tor):
+    new = tee.split(' ', 1)[1]
+    print(new)
+    print(Profile.objects.all())
+    Profile.objects.filter(uniId__contains=new).update(paired_with=tor)
 
 @receiver(post_save, sender=User)
 def create_user_profile(sender, instance, created, **kwargs):

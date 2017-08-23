@@ -11,6 +11,7 @@ class Pair(models.Model):
     mentor = models.ForeignKey('webcore.Profile', null=True, related_name="mentors", limit_choices_to={'role': 'Mentor'})
     mentee = models.ForeignKey('webcore.Profile', null=True, related_name="mentees", limit_choices_to={'role':'Mentee'})
 
+
     class Meta:
         db_table = "pair"
 
