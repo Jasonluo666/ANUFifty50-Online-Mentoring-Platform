@@ -5,9 +5,6 @@ Our client ANU Fifty50 is a student-run organisation promoting gender equity in 
 
 The project is to build an Online Mentoring Platform in the form of a website. The intent is to replace the current Wattle platform used by Fifty50. The platform automates the current mentoring program. Younger students (mentees) are paired with older students (mentors), which leads to the formation of inter-year networks. The program is different from other mentoring programs around as it has targeted content and forces the users to be reflective. Users can signup to the platform anytime. Once there is a match, a mentoring relationship is started. Content is released fortnightly and mentees and mentors can meet each other either in person or online.
 
-Our poster from Semester 1:
-https://drive.google.com/file/d/0Bw7MUyh12MoYXzNrYjNfOHkxZGc/view?usp=sharing
-
 #### TEAM
 1. Allissa Li - ANU Fifty50 Representative - Client
 2. Elena Williams - Tutor
@@ -42,7 +39,6 @@ The Online Mentoring Platform automates the mentoring program for our client. Cu
 
 #### HOW TO RUN THE PROJECT
 Change directory to project and follow the instructions:
-
 https://github.com/Nikita1710/Fifty50-Mentoring-Staging/blob/master/project/README.md
 
 #### PROJECT MILESTONES
@@ -58,13 +54,9 @@ The only cost will be associated with hosting the website on a server. The team 
 Our source code is stored at: 
 https://github.com/Nikita1710/Fifty50-Mentoring-Staging
 
-Email Nikita (u5830260@anu.edu.au) or Tyrus (u5800279@anu.edu.au) for access
-
 #### TRELLO PAGE
 Our Trello page is at: 
 https://trello.com/techlauncher2017onlinementoringplatform
-
-Email Nikita (u5830260@anu.edu.au) or Tyrus (u5800279@anu.edu.au) for access
 
 #### GOOGLE DRIVE
 1. Root Folder: https://drive.google.com/drive/folders/0B90o2KWKXkDqbWQ3clltaFdBVHc?usp=sharing
@@ -74,7 +66,12 @@ https://drive.google.com/drive/folders/0B90o2KWKXkDqVFU4Q012NGtQVW8?usp=sharing
 4. Team Meetings:
 https://drive.google.com/drive/folders/0B541nY2e_DZodlpEWnY5Tzh1M0E?usp=sharing
 5. Project Documents: https://drive.google.com/drive/folders/0Bw7MUyh12MoYSmVybWtVOS1GU2s?usp=sharing
+6. User Testing Documents : https://drive.google.com/drive/folders/0Bw7MUyh12MoYRno4VWNxVEtOaXc?usp=sharing
+7. Lecture Notes : https://drive.google.com/drive/folders/0B90o2KWKXkDqSFNJSzJUOWt4RVU?usp=sharing
 
+#### CONTACT
+If you don't have access to any of the above links, please contact
+Nikita (u5830260@anu.edu.au) or Tyrus (u5800279@anu.edu.au) for access!
 
  
 
