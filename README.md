@@ -1,4 +1,7 @@
+<img src="project/static/static/img/logo.png" alt="alt text" width="100" height="100" align="left">
+
 # ONLINE MENTORING PROGRAM PLATFORM
+
 ## CLIENT - ANU FIFTY50
 
 Our client ANU Fifty50 is a student-run organisation promoting gender equity in STEM. Their vision is to have an equitable STEM pipeline from university to industry and academia, inclusive of all students, regardless of their gender.
