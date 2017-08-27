@@ -75,7 +75,7 @@ class SignupForm(forms.Form):
     study_year = forms.ChoiceField(choices=YEAR_OF_STUDY, label="Year of Study")
     degree_programme = forms.ChoiceField(choices=BACHELOR_DEGREE_PROGRAMME, label='Bachelor Degree Program 1')
     degree_programme_2 = forms.ChoiceField(choices=BACHELOR_DEGREE_PROGRAMME, required = False, label='Bachelor Degree Program 2 (if applicable, e.g. flexible double degree)')
-    degree_major = forms.CharField(max_length=30, required = False, widget=forms.Textarea, label='What is your degree major?')
+    degree_major = forms.CharField(max_length=30, required = False, label='What is your degree major?')
     gender = forms.ChoiceField(choices=GENDER, label='What gender do you identify as?')
     mentor_gender = forms.ChoiceField(choices=MENTOR_GENDER, label='Would you prefer a mentee/mentor that is the same gender as you?')
     why_mentor = forms.CharField(max_length=150, required = False, widget=forms.Textarea, label='Why do you want to become a mentor?')
