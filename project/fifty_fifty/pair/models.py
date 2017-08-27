@@ -1,5 +1,5 @@
 from django.db import models
-
+from webcore.models import Profile
 # Create your models here.
 
 class Pair(models.Model):
@@ -8,8 +8,9 @@ class Pair(models.Model):
     It contains mentor name matched with mentee name
     """
     name = models.CharField(max_length=50, help_text='Enter a unique pair name',blank=True)
-    mentor = models.ForeignKey('webcore.Profile', null=True, related_name="mentors")
-    mentee = models.ForeignKey('webcore.Profile', null=True, related_name="mentees")
+    mentor = models.ForeignKey('webcore.Profile', null=True, related_name="mentors", limit_choices_to={'role': 'Mentor'})
+    mentee = models.ForeignKey('webcore.Profile', null=True, related_name="mentees", limit_choices_to={'role':'Mentee'})
+
 
     class Meta:
         db_table = "pair"

@@ -15,22 +15,75 @@
                     <button type="button" class="btn btn-default">In Person</button>
                 </div>
             </div>
-            <section>
-                <div class="container">
-                    <h4>How would you rate fifty50 so far?</h4>
-                    <div class="row lead evaluation">
-                        <div id="colorstar" class="starrr ratable badForm"></div>
-                        <span id="count">0</span> star(s) -
-                        <span id="meaning"> </span>
-                        <div class='indicators' style="display:none">
-                            <div id='textwr'>What went wrong?</div>
-                            <input id="rate[]" name="rate[]" type="text" placeholder="" class="form-control input-md" style="display:none;">
-                            <input id="rating[]" name="rating[]" type="text" placeholder="" class="form-control input-md rateval" style="display:none;">
-                            <span class="button-checkbox"><button type="button" class="btn criteria" data-color="info">Usefull</button><input type="checkbox" class="hidden" /></span>
-                            <span class="button-checkbox"><button type="button" class="btn criteria" data-color="info">Interesting</button><input type="checkbox" class="hidden" /></span>
-                            <span class="button-checkbox"><button type="button" class="btn criteria" data-color="info">Accessable</button><input type="checkbox" class="hidden" /></span>
+            <!-- /.container-fluid -->
+        </nav>
+        <div class="container" style="text-align: center; margin-top: 5%;">
+          <div class="container" style="position:relative; margin-top:10%;">
+              <div class="jumbotron">
+                  <div class="row">
+                      <div class="col-md-4 col-xs-12 col-sm-6 col-lg-4">
+                          <img src="https://www.svgimages.com/svg-image/s5/man-passportsize-silhouette-icon-256x256.png" alt="stack photo" class="img">
+                      </div>
+                      <div class="col-md-8 col-xs-12 col-sm-6 col-lg-8">
+                          <div class="container" style="border-bottom:1px solid black">
+
+                              <h3>
+                                  Your  {% if request.user.profile.role == 'Mentor' %}
+                                            Mentee's id is {{request.user.profile.paired_with}}
+                                        {% else %}
+                                            Mentor's id is {{request.user.profile.paired_with}}
+                                         {% endif %}
+                              </h3>
+                              <hr>
+                              <h2>MentorFName MentorLName</h2>
+                          </div>
+                          Hi! About me: I'm currently a 4th year bachelor of IT student. Lorem ipsum etc. etc. etc.
+                          <ul class="container details">
+                              <li><p><span class="glyphicon glyphicon-earphone one" style="width:50px;"></span>+91 90000 00000</p></li>
+                              <li><p><span class="glyphicon glyphicon-envelope one" style="width:50px;"></span>somerandom@email.com</p></li>
+                              <li><p><span class="glyphicon glyphicon-map-marker one" style="width:50px;"></span>Hyderabad</p></li>
+                              <li><p><span class="glyphicon glyphicon-new-window one" style="width:50px;"></span><a href="#">www.example.com</p></a>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+        <h1>
+          <div class="row">
+                <div class="row">
+                    <h1>How amazing was your week?</h1>
+                    <hr>
+                    <h4>Did you meet up with your partner?</h4>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default">No</button>
+                        <button type="button" class="btn btn-default">Online</button>
+                        <button type="button" class="btn btn-default">In Person</button>
+                    </div>
+                </div>
+                <div class="col-sm-12 text-center">
+
+                    <div class="container" style="width:100%; text-align:center;">
+                        <h4>How would you rate Fifty50 so far?</h4>
+                        <div class="row lead evaluation">
+                            <div id="colorstar" class="starrr ratable badForm"></div>
+                            <span id="count">0</span> star(s) -
+                            <span id="meaning"> </span>
+                            <div class='indicators' style="display:none">
+                                <div id='textwr'>What went wrong?</div>
+                                <input id="rate[]" name="rate[]" type="text" placeholder="" class="form-control input-md" style="display:none;">
+                                <input id="rating[]" name="rating[]" type="text" placeholder="" class="form-control input-md rateval" style="display:none;">
+                                <span class="button-checkbox"><button type="button" class="btn criteria" data-color="info">Useful</button><input type="checkbox" class="hidden" /></span>
+                                <span class="button-checkbox"><button type="button" class="btn criteria" data-color="info">Interesting</button><input type="checkbox" class="hidden" /></span>
+                                <span class="button-checkbox"><button type="button" class="btn criteria" data-color="info">Accessible</button><input type="checkbox" class="hidden" /></span>
+                            </div>
                         </div>
                     </div>
+                  </div>
+                <h4>Would you like to provide any more feedback?</h4>
+                <input type="text" style="font-size:12px;" placeholder="e.g. I really enjoyed..... / The program can be improved by....."/>
+                <div class="row" style="margin-bottom: 35px;">
+                    <a href="mailto:nikitabhatia.17@gmail.com" class="btn btn-primary btn-xl sr-button">Submit</a>
                 </div>
             </section>
             <h4>Would you like to provide anymore feedback?</h4>
@@ -60,15 +113,15 @@
 
 
     <!-- jQuery -->
-    <script src={% static "vendor/jquery/jquery.min.js" %}></script>
+    <script src={% static "MenteePage/vendor/jquery/jquery.min.js" %}></script>
     <!-- Bootstrap Core JavaScript -->
-    <script src={% static "vendor/bootstrap/js/bootstrap.min.js" %}></script>
+    <script src={% static "MenteePage/vendor/bootstrap/js/bootstrap.min.js" %}></script>
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src={% static "vendor/scrollreveal/scrollreveal.min.js" %}></script>
-    <script src={% static "vendor/magnific-popup/jquery.magnific-popup.min.js" %}></script>
+    <script src={% static "MenteePage/vendor/scrollreveal/scrollreveal.min.js" %}></script>
+    <script src={% static "MenteePage/vendor/magnific-popup/jquery.magnific-popup.min.js" %}></script>
     <!-- Theme JavaScript -->
-    <script src={% static "js/creative.min.js" %}></script>
+    <script src={% static "MenteePage/js/creative.min.js" %}></script>
 
     <!-- NEED THIS-->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -79,12 +132,11 @@
     <script src={% static "bootstrap/js/star-rating.js" %} type="text/javascript"></script>
 
     <!-- Bootstrap core CSS -->
-    <link href={% static "bootstrap/css/bootstrap.css" %} rel="stylesheet">
+    <link href={% static "MenteePage/vendor/bootstrap/css/bootstrap.min.css" %} rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href={% static "style.css" %} rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-
 <!-- CUSTOM CODE -->
     <link href={% static "bootstrap/css/star-rating.css" %} media="all" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

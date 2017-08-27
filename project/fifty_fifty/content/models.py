@@ -13,7 +13,6 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
-    
 
 
 class Mentor(models.Model):
@@ -33,7 +32,7 @@ class Mentee(models.Model):
 class Training(models.Model):
     title = models.CharField(max_length=200)
     docfile = models.FileField(upload_to='training/', null=True)
-    
+
     def __str__(self):
         return self.title
 
@@ -63,8 +62,3 @@ def auto_delete_file_on_change(sender, instance, **kwargs):
     if not old_file == new_file:
         if os.path.isfile(old_file.path):
             os.remove(old_file.path)
-
-
-
-
-

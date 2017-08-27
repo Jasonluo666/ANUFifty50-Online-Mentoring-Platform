@@ -16,12 +16,14 @@ ROLES = (
 )
 
 DEGREE_MAJOR = (
+    ('-', '-'), #error-checking st. "-" isn't a valid answer
     ('MAJOR1', 'MAJOR1'),
     ('MAJOR2', 'MAJOR2'),
     ('MAJOR3', 'MAJOR3'),
 )
 
 GENDER = (
+    ('-', '-'), #error-checking st. "-" isn't a valid answer
     ('Male', 'Male'),
     ('Female', 'Female'),
     ('Other', 'Other'),
@@ -30,6 +32,7 @@ GENDER = (
 
 
 MENTOR_GENDER = (
+    ('-', '-'), #error-checking st. "-" isn't a valid answer
     ('Definitely', 'Definitely'),
     ('If possible', 'If possible'),
     ('Unconcerned', 'Unconcerned'),
@@ -42,7 +45,7 @@ class SignupForm(forms.Form):
     uniId = forms.CharField(max_length=100, label='University ID')
     study_year = forms.IntegerField(min_value = 2000, max_value = 2017, label='Year of Study')
     degree_programme = forms.ChoiceField(choices=DEGREE_PROGRAMME, label='What degree program are you in?')
-    degree_major = forms.ChoiceField(choices=DEGREE_MAJOR, label='What is your major/subject area in which you focus? Drop down options?')
+    degree_major = forms.ChoiceField(choices=DEGREE_MAJOR, label='What is your major/subject area in which you focus?')
     gender = forms.ChoiceField(choices=GENDER, label='What gender do you identify as?')
     mentor_gender = forms.ChoiceField(choices=MENTOR_GENDER, label='Would you prefer a mentee/mentor that is the same gender as you?')
     why_mentor = forms.CharField(max_length=150, required = False, widget=forms.Textarea, label='Why do you want to become a mentor?')
