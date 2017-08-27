@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca03b440-7c18-4fbb-b8da-3a62b745748e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/fifty_fifty/webcore/templates/content.html" afterPath="$PROJECT_DIR$/project/fifty_fifty/webcore/templates/content.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/fifty_fifty/webcore/templates/post.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/fifty_fifty/content/admin.py" afterPath="$PROJECT_DIR$/project/fifty_fifty/content/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/fifty_fifty/content/models.py" afterPath="$PROJECT_DIR$/project/fifty_fifty/content/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/fifty_fifty/content/urls.py" afterPath="$PROJECT_DIR$/project/fifty_fifty/content/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/fifty_fifty/fifty_fifty/urls.py" afterPath="$PROJECT_DIR$/project/fifty_fifty/fifty_fifty/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/fifty_fifty/webcore/templates/news.html" afterPath="$PROJECT_DIR$/project/fifty_fifty/webcore/templates/news.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/fifty_fifty/webcore/templates/resources.html" afterPath="$PROJECT_DIR$/project/fifty_fifty/webcore/templates/resources.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/fifty_fifty/webcore/views.py" afterPath="$PROJECT_DIR$/project/fifty_fifty/webcore/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,87 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="manage.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/fifty_fifty/manage.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Feedback.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/fifty_fifty/webcore/templates/Feedback.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/fifty_fifty/webcore/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="navbar.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/fifty_fifty/webcore/templates/navbar.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mentor.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/fifty_fifty/webcore/templates/mentor.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1503618921000" expanded="true" signature="8458:8670" ph="..." />
-                <marker date="1503618921000" expanded="true" signature="8458:8675" ph="..." />
-                <marker date="1503618921000" expanded="false" signature="8500:8520" ph="..." />
-                <marker date="1503618921000" expanded="true" signature="8521:8659" ph="..." />
-                <marker date="1503618921000" expanded="true" signature="8751:9653" ph="..." />
-                <marker date="1503618921000" expanded="false" signature="8785:8803" ph="..." />
-                <marker date="1503618921000" expanded="false" signature="8847:8859" ph="..." />
-                <marker date="1503618921000" expanded="false" signature="8920:8939" ph="..." />
-                <marker date="1503618921000" expanded="false" signature="9032:9050" ph="..." />
-                <marker date="1503618921000" expanded="false" signature="9176:9194" ph="..." />
-                <marker date="1503618921000" expanded="false" signature="9349:9367" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="content.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/project/fifty_fifty/webcore/templates/content.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="533">
-              <caret line="121" column="109" lean-forward="false" selection-start-line="121" selection-start-column="109" selection-end-line="121" selection-end-column="109" />
-              <folding>
-                <element signature="e#4131#4155#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/project/fifty_fifty/content/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+            <state relative-caret-position="375">
+              <caret line="25" column="8" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -101,7 +33,100 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project/fifty_fifty/webcore/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="23" column="19" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="resources.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project/fifty_fifty/webcore/templates/resources.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="249">
+              <caret line="96" column="53" lean-forward="false" selection-start-line="96" selection-start-column="53" selection-end-line="96" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="content.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project/fifty_fifty/webcore/templates/content.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="455">
+              <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="news.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project/fifty_fifty/webcore/templates/news.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="326">
+              <caret line="113" column="35" lean-forward="false" selection-start-line="113" selection-start-column="35" selection-end-line="113" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="post.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project/fifty_fifty/webcore/templates/post.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="123" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project/fifty_fifty/content/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="31" lean-forward="false" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project/fifty_fifty/content/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project/fifty_fifty/fifty_fifty/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -109,8 +134,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/project/fifty_fifty/content/models.py" />
         <option value="$PROJECT_DIR$/project/fifty_fifty/webcore/templates/content.html" />
+        <option value="$PROJECT_DIR$/project/fifty_fifty/content/admin.py" />
+        <option value="$PROJECT_DIR$/project/fifty_fifty/webcore/templates/account/post.html" />
+        <option value="$PROJECT_DIR$/project/fifty_fifty/webcore/templates/resources.html" />
+        <option value="$PROJECT_DIR$/project/fifty_fifty/webcore/templates/news.html" />
+        <option value="$PROJECT_DIR$/project/fifty_fifty/webcore/views.py" />
+        <option value="$PROJECT_DIR$/project/fifty_fifty/fifty_fifty/urls.py" />
+        <option value="$PROJECT_DIR$/project/fifty_fifty/content/urls.py" />
+        <option value="$PROJECT_DIR$/project/fifty_fifty/content/models.py" />
       </list>
     </option>
   </component>
@@ -121,9 +153,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="648" />
+    <option name="x" value="474" />
     <option name="y" value="23" />
-    <option name="width" value="792" />
+    <option name="width" value="966" />
     <option name="height" value="838" />
   </component>
   <component name="ProjectView">
@@ -141,8 +173,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -173,18 +203,41 @@
               <item name="Fifty50-Mentoring-Staging" type="462c0819:PsiDirectoryNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
               <item name="fifty_fifty" type="462c0819:PsiDirectoryNode" />
+              <item name="fifty_fifty" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Fifty50-Mentoring-Staging" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Fifty50-Mentoring-Staging" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="fifty_fifty" type="462c0819:PsiDirectoryNode" />
               <item name="webcore" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Fifty50-Mentoring-Staging" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Fifty50-Mentoring-Staging" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="fifty_fifty" type="462c0819:PsiDirectoryNode" />
+              <item name="webcore" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/project/fifty_fifty/webcore/templates" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -237,29 +290,62 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="648" y="23" width="792" height="838" extended-state="0" />
+    <frame x="474" y="23" width="966" height="838" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27651516" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36335403" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2553419" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2553419" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27651516" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2553419" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27651516" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-    </layout>
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -272,11 +358,232 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/project/fifty_fifty/webcore/templates/Feedback.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/fifty_fifty/webcore/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#28#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/fifty_fifty/webcore/templates/navbar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/fifty_fifty/webcore/templates/mentor.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1503810184000" expanded="true" signature="6770:6785" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="6770:9402" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="6799:9385" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="6827:9380" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="6861:7357" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="7050:7334" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="7409:8958" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="7462:7492" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="7493:8933" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="7619:8906" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="7886:7898" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="7899:8875" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="8102:8115" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="8259:8272" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="9072:9087" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="9168:9380" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="9210:9230" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="9231:9369" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="9461:10363" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="9495:9513" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="9514:10345" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="9557:9569" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="9630:9649" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="9742:9760" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="9886:9904" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="10059:10077" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/fifty_fifty/webcore/templates/content.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2625">
+          <caret line="175" column="24" lean-forward="true" selection-start-line="175" selection-start-column="24" selection-end-line="175" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/fifty_fifty/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/fifty_fifty/webcore/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/fifty_fifty/webcore/templates/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="59" column="39" lean-forward="false" selection-start-line="59" selection-start-column="39" selection-end-line="59" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/project/fifty_fifty/manage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/fifty_fifty/webcore/templates/Feedback.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/fifty_fifty/webcore/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#28#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/fifty_fifty/webcore/templates/navbar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/fifty_fifty/webcore/templates/mentor.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1503810184000" expanded="true" signature="6770:6785" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="6770:9402" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="6799:9385" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="6827:9380" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="6861:7357" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="7050:7334" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="7409:8958" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="7462:7492" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="7493:8933" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="7619:8906" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="7886:7898" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="7899:8875" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="8102:8115" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="8259:8272" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="9072:9087" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="9168:9380" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="9210:9230" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="9231:9369" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="9461:10363" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="9495:9513" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="9514:10345" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="9557:9569" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="9630:9649" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="9742:9760" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="9886:9904" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="10059:10077" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/fifty_fifty/mentee/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/fifty_fifty/webcore/templates/content.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2055">
+          <caret line="137" column="0" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/fifty_fifty/content/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/fifty_fifty/fifty_fifty/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="50" column="14" lean-forward="false" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
+          <folding>
+            <marker date="1503810155000" expanded="true" signature="918:1283" ph="..." />
+            <marker date="1503810155000" expanded="true" signature="1300:1751" ph="..." />
+            <marker date="1503810155000" expanded="true" signature="1802:2344" ph="..." />
+            <marker date="1503810155000" expanded="true" signature="1808:2341" ph="..." />
+            <marker date="1503810155000" expanded="true" signature="1896:1969" ph="..." />
+            <marker date="1503810155000" expanded="true" signature="2018:2334" ph="..." />
+            <marker date="1503810155000" expanded="true" signature="2054:2323" ph="..." />
+            <marker date="1503810155000" expanded="true" signature="2494:2671" ph="..." />
+            <marker date="1503810155000" expanded="true" signature="2728:2803" ph="..." />
+            <marker date="1503810155000" expanded="true" signature="2818:2920" ph="..." />
+            <marker date="1503810155000" expanded="true" signature="2835:2918" ph="..." />
+            <marker date="1503810155000" expanded="true" signature="2924:3025" ph="..." />
+            <marker date="1503810155000" expanded="true" signature="3055:3449" ph="..." />
+            <marker date="1503810155000" expanded="true" signature="3061:3158" ph="..." />
+            <marker date="1503810155000" expanded="true" signature="3166:3253" ph="..." />
+            <marker date="1503810155000" expanded="true" signature="3261:3349" ph="..." />
+            <marker date="1503810155000" expanded="true" signature="3357:3446" ph="..." />
+            <marker date="1503810155000" expanded="true" signature="3453:3529" ph="..." />
+            <marker date="1503810155000" expanded="true" signature="3624:3725" ph="..." />
+            <marker date="1503810155000" expanded="true" signature="3761:4020" ph="..." />
+            <marker date="1503810155000" expanded="true" signature="3953:4019" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/fifty_fifty/webcore/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/fifty_fifty/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -293,7 +600,7 @@
         <state relative-caret-position="30">
           <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -311,17 +618,32 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1503618921000" expanded="true" signature="8458:8670" ph="..." />
-            <marker date="1503618921000" expanded="true" signature="8458:8675" ph="..." />
-            <marker date="1503618921000" expanded="false" signature="8500:8520" ph="..." />
-            <marker date="1503618921000" expanded="true" signature="8521:8659" ph="..." />
-            <marker date="1503618921000" expanded="true" signature="8751:9653" ph="..." />
-            <marker date="1503618921000" expanded="false" signature="8785:8803" ph="..." />
-            <marker date="1503618921000" expanded="false" signature="8847:8859" ph="..." />
-            <marker date="1503618921000" expanded="false" signature="8920:8939" ph="..." />
-            <marker date="1503618921000" expanded="false" signature="9032:9050" ph="..." />
-            <marker date="1503618921000" expanded="false" signature="9176:9194" ph="..." />
-            <marker date="1503618921000" expanded="false" signature="9349:9367" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="6770:6785" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="6770:9402" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="6799:9385" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="6827:9380" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="6861:7357" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="7050:7334" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="7409:8958" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="7462:7492" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="7493:8933" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="7619:8906" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="7886:7898" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="7899:8875" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="8102:8115" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="8259:8272" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="9072:9087" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="9168:9380" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="9210:9230" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="9231:9369" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="9461:10363" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="9495:9513" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="9514:10345" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="9557:9569" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="9630:9649" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="9742:9760" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="9886:9904" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="10059:10077" ph="..." />
           </folding>
         </state>
       </provider>
@@ -330,9 +652,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3465">
           <caret line="231" column="18" lean-forward="false" selection-start-line="231" selection-start-column="18" selection-end-line="231" selection-end-column="18" />
-          <folding>
-            <element signature="e#4131#4155#0#HTML" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -340,7 +660,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -357,7 +676,7 @@
         <state relative-caret-position="135">
           <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -375,17 +694,32 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1503618921000" expanded="true" signature="8458:8670" ph="..." />
-            <marker date="1503618921000" expanded="true" signature="8458:8675" ph="..." />
-            <marker date="1503618921000" expanded="false" signature="8500:8520" ph="..." />
-            <marker date="1503618921000" expanded="true" signature="8521:8659" ph="..." />
-            <marker date="1503618921000" expanded="true" signature="8751:9653" ph="..." />
-            <marker date="1503618921000" expanded="false" signature="8785:8803" ph="..." />
-            <marker date="1503618921000" expanded="false" signature="8847:8859" ph="..." />
-            <marker date="1503618921000" expanded="false" signature="8920:8939" ph="..." />
-            <marker date="1503618921000" expanded="false" signature="9032:9050" ph="..." />
-            <marker date="1503618921000" expanded="false" signature="9176:9194" ph="..." />
-            <marker date="1503618921000" expanded="false" signature="9349:9367" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="6770:6785" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="6770:9402" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="6799:9385" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="6827:9380" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="6861:7357" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="7050:7334" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="7409:8958" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="7462:7492" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="7493:8933" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="7619:8906" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="7886:7898" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="7899:8875" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="8102:8115" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="8259:8272" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="9072:9087" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="9168:9380" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="9210:9230" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="9231:9369" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="9461:10363" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="9495:9513" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="9514:10345" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="9557:9569" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="9630:9649" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="9742:9760" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="9886:9904" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="10059:10077" ph="..." />
           </folding>
         </state>
       </provider>
@@ -394,9 +728,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2625">
           <caret line="175" column="24" lean-forward="true" selection-start-line="175" selection-start-column="24" selection-end-line="175" selection-end-column="24" />
-          <folding>
-            <element signature="e#4131#4155#0#HTML" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -404,7 +736,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -427,7 +758,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -444,7 +774,7 @@
         <state relative-caret-position="45">
           <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -462,17 +792,32 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1503618921000" expanded="true" signature="8458:8670" ph="..." />
-            <marker date="1503618921000" expanded="true" signature="8458:8675" ph="..." />
-            <marker date="1503618921000" expanded="false" signature="8500:8520" ph="..." />
-            <marker date="1503618921000" expanded="true" signature="8521:8659" ph="..." />
-            <marker date="1503618921000" expanded="true" signature="8751:9653" ph="..." />
-            <marker date="1503618921000" expanded="false" signature="8785:8803" ph="..." />
-            <marker date="1503618921000" expanded="false" signature="8847:8859" ph="..." />
-            <marker date="1503618921000" expanded="false" signature="8920:8939" ph="..." />
-            <marker date="1503618921000" expanded="false" signature="9032:9050" ph="..." />
-            <marker date="1503618921000" expanded="false" signature="9176:9194" ph="..." />
-            <marker date="1503618921000" expanded="false" signature="9349:9367" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="6770:6785" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="6770:9402" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="6799:9385" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="6827:9380" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="6861:7357" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="7050:7334" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="7409:8958" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="7462:7492" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="7493:8933" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="7619:8906" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="7886:7898" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="7899:8875" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="8102:8115" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="8259:8272" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="9072:9087" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="9168:9380" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="9210:9230" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="9231:9369" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="9461:10363" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="9495:9513" ph="..." />
+            <marker date="1503810184000" expanded="true" signature="9514:10345" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="9557:9569" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="9630:9649" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="9742:9760" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="9886:9904" ph="..." />
+            <marker date="1503810184000" expanded="false" signature="10059:10077" ph="..." />
           </folding>
         </state>
       </provider>
@@ -481,28 +826,111 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/fifty_fifty/webcore/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-513">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#28#0" expanded="false" />
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/fifty_fifty/content/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/fifty_fifty/webcore/templates/content.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/fifty_fifty/webcore/templates/resources.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="96" column="53" lean-forward="false" selection-start-line="96" selection-start-column="53" selection-end-line="96" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/fifty_fifty/content/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/fifty_fifty/fifty_fifty/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/fifty_fifty/content/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="31" lean-forward="false" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/fifty_fifty/webcore/templates/post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="123" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/fifty_fifty/webcore/templates/news.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="113" column="35" lean-forward="false" selection-start-line="113" selection-start-column="35" selection-end-line="113" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/fifty_fifty/webcore/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="23" column="19" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/fifty_fifty/content/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/project/fifty_fifty/content/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        <state relative-caret-position="375">
+          <caret line="25" column="8" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/fifty_fifty/webcore/templates/content.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="121" column="109" lean-forward="false" selection-start-line="121" selection-start-column="109" selection-end-line="121" selection-end-column="109" />
-          <folding>
-            <element signature="e#4131#4155#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

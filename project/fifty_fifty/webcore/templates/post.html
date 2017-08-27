@@ -105,20 +105,24 @@
         </nav>
 
     <!-- Page Content -->
-
     <h1> My Blog Archive </h1>
-    {% for post in posts %}
-        {{post.title }}
-        <div class="post">
-        <h2>
-        <a href="{{post.get_absolute_url}}">{{post.title}}</a>
-        </h2>
-        <p>{{post.description}}</p>
-        <p>Posted on<time datetime="{{post.created|date:"c"}}">
-            {{post.created|date}}</time>
-        </p>
-        </div>
-    {% endfor %}
+
+<article>
+<header>
+<h1> {{post.title}} </h1>
+<p>
+Posted on
+<time datetime="{{post.created|date:"c"}}">
+{{post.created|date}}
+</time>
+</p>
+</header>
+<p class="description">
+{{post.description}}
+</p>
+{{post.content|safe}}
+</article>
+
         
         <footer class="contact-footer">
             <div style="text-align:center;">

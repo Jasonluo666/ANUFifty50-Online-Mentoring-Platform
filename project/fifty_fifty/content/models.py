@@ -4,15 +4,26 @@ from django.utils import timezone
 from django.db.models.signals import pre_save
 from django.db.models.signals import post_delete
 from django.dispatch.dispatcher import receiver
+from django.core.urlresolvers import reverse
 
 
 
 class Post(models.Model):
-    title = models.CharField(max_length=200)
-    docfile = models.FileField(upload_to='news/', null=True)
+    title = models.CharField(max_length=255,null=True)
+    slug = models.SlugField(unique=True, max_length=255,null=True)
+    description = models.CharField(max_length=255,null=True)
+    content = models.TextField(null=True)
+    published = models.BooleanField(default=True)
+    created = models.DateTimeField(auto_now_add=True,null=True)
 
-    def __str__(self):
-        return self.title
+    class Meta:
+        ordering = ['-created']
+
+    def __unicode__(self):
+        return u'%s' % self.title
+
+    ##def get_absolute_url(self):
+      ##  return reverse('webcore.views.post', args=[self.slug])
 
 
 class Mentor(models.Model):
@@ -38,7 +49,6 @@ class Training(models.Model):
 
 
 #Delete content from folder
-@receiver(post_delete, sender=Post)
 @receiver(post_delete, sender=Mentor)
 @receiver(post_delete, sender=Mentee)
 @receiver(post_delete, sender=Training)
@@ -47,7 +57,6 @@ def delete(sender, instance, **kwargs):
     instance.docfile.delete(False)
 
 #Edit content from folder
-@receiver(pre_save, sender=Post)
 @receiver(pre_save, sender=Mentor)
 @receiver(pre_save, sender=Mentee)
 @receiver(pre_save, sender=Training)

@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 from content.models import Post, Mentee, Mentor, Training
 from webcore.models import Profile, Xpairs
+from django.shortcuts import render, get_object_or_404
 #from content
 
 # Create your views here.
@@ -17,13 +18,22 @@ def userProfile(request):
     template = 'menteelogin.html'
     return render(request,template,context)
 
+
+##News stuff
 @login_required
 def userProfileNews(request):
-    user = request.user
-    context = {'user':user}
-    template = 'news.html'
-    return render(request,template,context)
+    # get the blog posts that are published
 
+    user = request.user
+    context = {'user':user, 'posts':Post.objects.filter(published=True)}
+    template = 'news.html'
+    return render(request,template,context,)
+
+def post(request, slug):
+    # get the Post object
+    post = get_object_or_404(Post, slug=slug)
+    # now return the rendered template
+    return render(request, 'post.html', {'post': post})
 
 @login_required
 def userProfileMentor(request):
