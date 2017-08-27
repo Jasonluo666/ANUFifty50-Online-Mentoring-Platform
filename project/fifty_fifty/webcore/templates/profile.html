@@ -72,10 +72,10 @@
                             <a class="page-scroll" href="contact.html">Contact Us</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="#signout">Sign Out</a>
+                            <a class="page-scroll" href="profile.html">My Profile <img src={% static "MenteePage/img/unnamed.png" %} style="height:25px;width:25px; border-radius: 50%"></a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="profile.html">My Profile <img src={% static "MenteePage/img/unnamed.png" %} style="height:25px;width:25px; border-radius: 50%"></a>
+                            <a class="page-scroll" href="#signout">Sign Out</a>
                         </li>
                     </ul>
                 </div>
@@ -92,7 +92,7 @@
                     </div>
                     <div class="col-md-8 col-xs-12 col-sm-6 col-lg-8">
                         <div class="container" style="border-bottom:1px solid black">
-                            <h2>{{user.first_name}}{{user.last_name}}</h2>
+                            <h2>{{user.first_name}}&nbsp;{{user.last_name}}</h2>
                         </div>
                         <hr>
                         <ul class="container details">

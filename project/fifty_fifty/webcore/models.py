@@ -66,9 +66,9 @@ class Xpairs(models.Model):
     mentor = models.ForeignKey(Profile, related_name="Xmentors", limit_choices_to={'role': 'Mentor'})
     name = models.CharField(max_length=50, help_text='Enter a unique pair name',blank=True, null = True)
 
-    def save(self, *args, **kwargs):
-        self.name = str(self.mentee) +" -> "+ str(self.mentor)
-        self.shortcode = transfer(str(self.mentee),str(self.mentor))
+    def save(self, *args, **kwargs): ## Overiding the save function of Xpairs
+        self.name = str(self.mentee) +" -> "+ str(self.mentor)  ## Changing name of pair as mentee -> mentor
+        self.shortcode = transfer(str(self.mentee),str(self.mentor)) ## trimming mentee and mentor, and transfering them to Profile.paired_with
         super(Xpairs, self).save(*args, **kwargs)
 
     def __str__(self):
@@ -77,10 +77,12 @@ class Xpairs(models.Model):
 
 
 def transfer(tee,tor):
-    new = tee.split(' ', 1)[1]
+    menteeId = tee.split(' ', 1)[1]
+    mentorId = tor.split(' ', 1)[1]
     print(new)
     print(Profile.objects.all())
-    Profile.objects.filter(uniId__contains=new).update(paired_with=tor)
+    Profile.objects.filter(uniId__contains=menteeId).update(paired_with=mentorId)
+    Profile.objects.filter(uniId__contains=mentorId).update(paired_with=menteeId)
 
 @receiver(post_save, sender=User)
 def create_user_profile(sender, instance, created, **kwargs):

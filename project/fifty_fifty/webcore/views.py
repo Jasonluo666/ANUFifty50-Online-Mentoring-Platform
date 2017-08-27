@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 from content.models import Post, Mentee, Mentor, Training
+from webcore.models import Profile, Xpairs
 #from content
 
 # Create your views here.
@@ -27,9 +28,8 @@ def userProfileNews(request):
 @login_required
 def userProfileMentor(request):
     user = request.user
-    context = {'user':user}
     template = 'mentor.html'
-    return render(request,template,context)
+    return render(request,template)
 
 @login_required
 def userProfileResources(request):
