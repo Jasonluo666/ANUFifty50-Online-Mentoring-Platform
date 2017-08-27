@@ -116,7 +116,6 @@ class Xpairs(models.Model):
 def transfer(tee,tor):
     menteeId = tee.split(' ', 1)[1]
     mentorId = tor.split(' ', 1)[1]
-    print(new)
     print(Profile.objects.all())
     Profile.objects.filter(uniId__contains=menteeId).update(paired_with=mentorId)
     Profile.objects.filter(uniId__contains=mentorId).update(paired_with=menteeId)
