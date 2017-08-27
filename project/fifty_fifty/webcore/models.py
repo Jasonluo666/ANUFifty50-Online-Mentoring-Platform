@@ -55,12 +55,6 @@ ROLES = (
     ('Mentor', 'Mentor'),
 )
 
-DEGREE_MAJOR = (
-    ('MAJOR1', 'MAJOR1'),
-    ('MAJOR2', 'MAJOR2'),
-    ('MAJOR3', 'MAJOR3'),
-)
-
 GENDER = (
     ('','-'), #error-checking st. "-" isn't a valid answer
     ('Male', 'Male'),
@@ -85,7 +79,7 @@ class Profile(models.Model):
     study_year = models.CharField(max_length=100,choices=YEAR_OF_STUDY, blank=False)
     degree_programme = models.CharField(max_length=50, null = True ,blank=False,choices=BACHELOR_DEGREE_PROGRAMME)
     degree_programme_2 = models.CharField(max_length=50, null = True ,choices=BACHELOR_DEGREE_PROGRAMME)
-    degree_major = models.CharField(max_length=50, null = True ,choices=DEGREE_MAJOR)
+    degree_major = models.CharField(max_length=15, null = True)
     gender = models.CharField(max_length=15, null = True ,choices=GENDER)
     mentor_gender = models.CharField(max_length=15, null = True ,choices=MENTOR_GENDER)
     why_mentor = models.CharField(max_length=150, null = True)
