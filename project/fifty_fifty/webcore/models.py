@@ -7,13 +7,6 @@ from django.core.validators import RegexValidator
 from django.core.validators import MinValueValidator
 from django.core.validators import MaxValueValidator
 
-YEAR_OF_STUDY = (
-    ('1','1'),
-    ('2','2'),
-    ('3','3'),
-    ('4','4'),
-    ('5+','5+'),
-)
 
 DEGREE_PROGRAMME = (
     ('Science', 'Science'),
@@ -34,7 +27,6 @@ DEGREE_MAJOR = (
 )
 
 GENDER = (
-    ('','-'), #error-checking st. "-" isn't a valid answer
     ('Male', 'Male'),
     ('Female', 'Female'),
     ('Other', 'Other'),
@@ -54,7 +46,7 @@ class Profile(models.Model):
     role = models.CharField(max_length=15, null = True ,choices=ROLES)
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     uniId = models.CharField(max_length=100)
-    study_year = models.CharField(max_length=100,choices=YEAR_OF_STUDY, blank=False)
+    study_year = models.IntegerField(null = True, validators=[MinValueValidator(2000), MaxValueValidator(2017)])
     degree_programme = models.CharField(max_length=50, null = True ,choices=DEGREE_PROGRAMME)
     degree_major = models.CharField(max_length=50, null = True ,choices=DEGREE_MAJOR)
     gender = models.CharField(max_length=15, null = True ,choices=GENDER)
@@ -87,6 +79,7 @@ class Xpairs(models.Model):
 def transfer(tee,tor):
     menteeId = tee.split(' ', 1)[1]
     mentorId = tor.split(' ', 1)[1]
+    print(new)
     print(Profile.objects.all())
     Profile.objects.filter(uniId__contains=menteeId).update(paired_with=mentorId)
     Profile.objects.filter(uniId__contains=mentorId).update(paired_with=menteeId)

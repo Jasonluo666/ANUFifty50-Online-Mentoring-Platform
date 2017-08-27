@@ -211,7 +211,7 @@ header h1 {
   padding: 0px 5% 1em;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  z-index: 0;
+  z-index: 1;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-transform: translateZ(0) translateX(100%);
