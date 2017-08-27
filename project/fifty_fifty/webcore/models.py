@@ -15,11 +15,39 @@ YEAR_OF_STUDY = (
     ('5+','5+'),
 )
 
-DEGREE_PROGRAMME = (
-    ('Science', 'Science'),
-    ('Technology', 'Technology'),
-    ('Engineering','Engineering'),
-    ('Mathematics', 'Mathematics')
+BACHELOR_DEGREE_PROGRAMME = (
+    ('','-'),
+    ('AACOM','Advanced Computing (Honours)'),
+    ('AACRD','Advanced Computing (R&D) (Honours)'),
+    ('BADAN','Applied Data Analytics'),
+    ('HADAN','Applied Data Analytics (Honours)'),
+    ('BBIOT','Biotechnology'),
+    ('HBIOT','Biotechnology (Honours)'),
+    ('AENGI','Engineering (Honours)'),
+    ('AENRD','Engineering (R&D) (Honours)'),
+    ('BENSU','Environment and Sustainability'),
+    ('HENSU','Environment and Sustainability (Honours)'),
+    ('AENSU','Environment and Sustainability Advanced (Honours)'),
+    ('HENVS','Environemntal Studies'),
+    ('BGENE','Genetics'),
+    ('HGENE','Genetics (Honours)'),
+    ('BHLTH','Health Science (Honours)'),
+    ('BIT','Information Technology'),
+    ('HIT','Information Technology (Honours)'),
+    ('BMASC','Mathematical Sciences'),
+    ('HMASC','Mathematical Sciences (Honours)'),
+    ('BMEDS','Medical Science'),
+    ('HMEDS/HMDSA','Medical Science (Honours)'),
+    ('PHBSCIENCE', 'PhB / Bachelor of Philosophy (Honours) in Science'),
+    ('APSYC','Psychology (Honours)'),
+    ('BSC','Science'),
+    ('HSC','Science (Honours)'),
+    ('ASCAD','Science (Advanced) (Honours)'),
+    ('BSPSY','Science (Psychology)'),
+    ('HSPSY','Science (Psychology) (Honours)'),
+    ('ASENG','Software Engineering (Honours)'),
+    ('ESCIE','Diploma of Science'),
+    ('ECOMP','Diploma of Computing'),
 )
 
 ROLES = (
@@ -55,7 +83,8 @@ class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     uniId = models.CharField(max_length=100)
     study_year = models.CharField(max_length=100,choices=YEAR_OF_STUDY, blank=False)
-    degree_programme = models.CharField(max_length=50, null = True ,choices=DEGREE_PROGRAMME)
+    degree_programme = models.CharField(max_length=50, null = True ,blank=False,choices=BACHELOR_DEGREE_PROGRAMME)
+    degree_programme_2 = models.CharField(max_length=50, null = True ,choices=BACHELOR_DEGREE_PROGRAMME)
     degree_major = models.CharField(max_length=50, null = True ,choices=DEGREE_MAJOR)
     gender = models.CharField(max_length=15, null = True ,choices=GENDER)
     mentor_gender = models.CharField(max_length=15, null = True ,choices=MENTOR_GENDER)
