@@ -3,6 +3,14 @@ from django.contrib.auth.models import User
 from django import forms
 from .models import Profile
 
+YEAR_OF_STUDY = (
+    ('1','1'),
+    ('2','2'),
+    ('3','3'),
+    ('4','4'),
+    ('5+','5+'),
+)
+
 DEGREE_PROGRAMME = (
     ('Science', 'Science'),
     ('Technology', 'Technology'),
@@ -16,14 +24,13 @@ ROLES = (
 )
 
 DEGREE_MAJOR = (
-    ('-', '-'), #error-checking st. "-" isn't a valid answer
     ('MAJOR1', 'MAJOR1'),
     ('MAJOR2', 'MAJOR2'),
     ('MAJOR3', 'MAJOR3'),
 )
 
 GENDER = (
-    ('-', '-'), #error-checking st. "-" isn't a valid answer
+    ('', '-'), #error-checking st. "-" isn't a valid answer
     ('Male', 'Male'),
     ('Female', 'Female'),
     ('Other', 'Other'),
@@ -32,7 +39,6 @@ GENDER = (
 
 
 MENTOR_GENDER = (
-    ('-', '-'), #error-checking st. "-" isn't a valid answer
     ('Definitely', 'Definitely'),
     ('If possible', 'If possible'),
     ('Unconcerned', 'Unconcerned'),
@@ -43,7 +49,7 @@ class SignupForm(forms.Form):
     first_name = forms.CharField(max_length=30, label='First Name')
     last_name = forms.CharField(max_length=30, label='Last Name')
     uniId = forms.CharField(max_length=100, label='University ID')
-    study_year = forms.IntegerField(min_value = 2000, max_value = 2017, label='Year of Study')
+    study_year = forms.ChoiceField(choices=YEAR_OF_STUDY, label="Year of Study")
     degree_programme = forms.ChoiceField(choices=DEGREE_PROGRAMME, label='What degree program are you in?')
     degree_major = forms.ChoiceField(choices=DEGREE_MAJOR, label='What is your major/subject area in which you focus?')
     gender = forms.ChoiceField(choices=GENDER, label='What gender do you identify as?')
