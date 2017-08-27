@@ -1,12 +1,12 @@
+<img src="project/static/static/Homepage/img/logo.png" width="100" height="100" align="left">
+
 # ONLINE MENTORING PROGRAM PLATFORM
+
 ## CLIENT - ANU FIFTY50
 
 Our client ANU Fifty50 is a student-run organisation promoting gender equity in STEM. Their vision is to have an equitable STEM pipeline from university to industry and academia, inclusive of all students, regardless of their gender.
 
 The project is to build an Online Mentoring Platform in the form of a website. The intent is to replace the current Wattle platform used by Fifty50. The platform automates the current mentoring program. Younger students (mentees) are paired with older students (mentors), which leads to the formation of inter-year networks. The program is different from other mentoring programs around as it has targeted content and forces the users to be reflective. Users can signup to the platform anytime. Once there is a match, a mentoring relationship is started. Content is released fortnightly and mentees and mentors can meet each other either in person or online.
-
-Our poster from Semester 1:
-https://drive.google.com/file/d/0Bw7MUyh12MoYXzNrYjNfOHkxZGc/view?usp=sharing
 
 #### TEAM
 1. Allissa Li - ANU Fifty50 Representative - Client
@@ -32,6 +32,14 @@ https://drive.google.com/file/d/0Bw7MUyh12MoYXzNrYjNfOHkxZGc/view?usp=sharing
 #### HOW OUR PROJECT IS MAKING THINGS BETTER FOR THE CLIENT?
 The Online Mentoring Platform automates the mentoring program for our client. Currently, the mentoring program uses Wattle and Google Docs for management. There is an administrative overhead with this as everything has to be done manually. This also limits the program to be just at the ANU. Through the platform, the overhead is reduced and it also gives rise to the possibility of expansion to other universities.  
 
+### VALUE DELIVERED TO OUR CLIENT SINCE THE LAST PROJECT AUDIT
+1. Since the last project audit, we have been able to deploy our website so it is ready as soon as we are able to train our Client into how the website works and how to use it. This means they can take control, start a test Mentoring Program in which they can have a few mentees, mentors and admins to control the site within their committee and give us any feedback using our GitHub Issues page. 
+2. We have fixed some pairing issues in which it didn't show admins who is paired with who, and if they are a mentor or not. This makes it much easier for admins to see now as they can find out exactly who is paired with who and if they are a mentor or mentee. 
+3. During week 4 we held a user testing session in which we got useful feedback from the users of our website. This feedback showed us how our users actually use our site and if they use it the way we intended for them to use it. Logs of the different issues we found were taken down and added to our GitHub issues page. Our team has been working on fixing these issues over time. 
+
+### EFFECTIVE AND APPROPRIATE DECISION MAKING
+Our last project audit gave insight into how we log the decisions we make. We have now created a Decision Paper document in which it encompasses all the decisions we have made since Week 1 of Semester 2. This decision paper helps us keep a track of all the important decisions we have made such as choosing to open source our project and delivering the minimal viable product to our client. 
+
 #### TOOLS USED
 1. Github for source code and version control.
 2. Slack for team and client communication.
@@ -42,7 +50,6 @@ The Online Mentoring Platform automates the mentoring program for our client. Cu
 
 #### HOW TO RUN THE PROJECT
 Change directory to project and follow the instructions:
-
 https://github.com/Nikita1710/Fifty50-Mentoring-Staging/blob/master/project/README.md
 
 #### PROJECT MILESTONES
@@ -56,15 +63,11 @@ The only cost will be associated with hosting the website on a server. The team 
 
 #### GITHUB REPOSITORY 
 Our source code is stored at: 
-https://github.com/Nikita1710/Fifty50-Mentoring-Staging
-
-Email Nikita (u5830260@anu.edu.au) or Tyrus (u5800279@anu.edu.au) for access
+https://github.com/Nikita1710/ANUFifty50-Online-Mentoring-Platform
 
 #### TRELLO PAGE
 Our Trello page is at: 
 https://trello.com/techlauncher2017onlinementoringplatform
-
-Email Nikita (u5830260@anu.edu.au) or Tyrus (u5800279@anu.edu.au) for access
 
 #### GOOGLE DRIVE
 1. Root Folder: https://drive.google.com/drive/folders/0B90o2KWKXkDqbWQ3clltaFdBVHc?usp=sharing
@@ -74,8 +77,10 @@ https://drive.google.com/drive/folders/0B90o2KWKXkDqVFU4Q012NGtQVW8?usp=sharing
 4. Team Meetings:
 https://drive.google.com/drive/folders/0B541nY2e_DZodlpEWnY5Tzh1M0E?usp=sharing
 5. Project Documents: https://drive.google.com/drive/folders/0Bw7MUyh12MoYSmVybWtVOS1GU2s?usp=sharing
+6. User Testing Documents : https://drive.google.com/drive/folders/0Bw7MUyh12MoYRno4VWNxVEtOaXc?usp=sharing
+7. Lecture Notes : https://drive.google.com/drive/folders/0B90o2KWKXkDqSFNJSzJUOWt4RVU?usp=sharing
+8. Decision Paper : https://docs.google.com/document/d/1XtujnVUvyAoELIFgfqHR2vYqOldP2CBT82ymI5FR2tA/edit?usp=sharing
 
-
- 
-
-
+#### CONTACT
+If you don't have access to any of the above links, please contact
+Nikita (u5830260@anu.edu.au) or Tyrus (u5800279@anu.edu.au) for access!
