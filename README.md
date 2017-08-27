@@ -27,7 +27,7 @@ The project is to build an Online Mentoring Platform in the form of a website. T
 #### CLIENT EXPECTATIONS
 1. In terms of the website, the client expectations are a functioning prototype by the end of Semester 1, 2017 and a tested version ready for release at the end of Semester 2, 2017.
 2. The client expects the team to communicate constantly through Slack and regular meetings.
-3. The client is happy with the progress so far and understands why the MVP (Minimal Viable Product) has been delayed. They are also happy that the team has taken user feedback into account.
+3. The client is happy with the progress so far and understands why the MVP (Minimal Viable Product) was delayed. The Client (Allissa) and the our team are currently working to find a time to show users from ANU Fifty50 how to use our product.
 
 #### HOW OUR PROJECT IS MAKING THINGS BETTER FOR THE CLIENT?
 The Online Mentoring Platform automates the mentoring program for our client. Currently, the mentoring program uses Wattle and Google Docs for management. There is an administrative overhead with this as everything has to be done manually. This also limits the program to be just at the ANU. Through the platform, the overhead is reduced and it also gives rise to the possibility of expansion to other universities.  
