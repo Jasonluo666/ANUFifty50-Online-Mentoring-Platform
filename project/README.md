@@ -21,6 +21,7 @@ The set of commands in a perfect world:
     mkvirtualenv Fifty50
     workon Fifty50
     pip install -r requirements.txt
+    ./manage.py makemigrations
     ./manage.py migrate
     ./manage.py createsuperuser
 
@@ -101,3 +102,20 @@ To log in to site admin using credentials created above navigate to:
 or specify URI and port to host publicly for other on your network.
 
     ./manage.py runserver 0.0.0.0:8000
+    
+### Login or Other Issues - Try this!
+If you are having issues with logging in as a mentor/mentee/admin or with signing up, please
+try this to fix the issue.
+    
+    1. Stop running the server
+        CTRL + C (Windows)
+        Control + C (Mac)
+    2. Make Migrations
+        ./manage.py makemigrations
+        ./manage.py migrate
+    3. Run the Server
+        ./manage.py runserver
+        
+ ### CONTACT
+ If you are having issues running the site, please log an issue with Github Issues OR
+ contact: Nikita (u5830260@anu.edu.au) or Tyrus (u5800279@anu.edu.au)
