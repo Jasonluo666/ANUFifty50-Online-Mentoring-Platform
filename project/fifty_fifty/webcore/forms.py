@@ -3,27 +3,57 @@ from django.contrib.auth.models import User
 from django import forms
 from .models import Profile
 
-DEGREE_PROGRAMME = (
-    ('Science', 'Science'),
-    ('Technology', 'Technology'),
-    ('Engineering','Engineering'),
-    ('Mathematics', 'Mathematics'),
+YEAR_OF_STUDY = (
+    ('1','1'),
+    ('2','2'),
+    ('3','3'),
+    ('4','4'),
+    ('5+','5+'),
 )
+
+BACHELOR_DEGREE_PROGRAMME = (
+    ('','-'),
+    ('AACOM','Advanced Computing (Honours)'),
+    ('AACRD','Advanced Computing (R&D) (Honours)'),
+    ('BADAN','Applied Data Analytics'),
+    ('HADAN','Applied Data Analytics (Honours)'),
+    ('BBIOT','Biotechnology'),
+    ('HBIOT','Biotechnology (Honours)'),
+    ('AENGI','Engineering (Honours)'),
+    ('AENRD','Engineering (R&D) (Honours)'),
+    ('BENSU','Environment and Sustainability'),
+    ('HENSU','Environment and Sustainability (Honours)'),
+    ('AENSU','Environment and Sustainability Advanced (Honours)'),
+    ('HENVS','Environemntal Studies'),
+    ('BGENE','Genetics'),
+    ('HGENE','Genetics (Honours)'),
+    ('BHLTH','Health Science (Honours)'),
+    ('BIT','Information Technology'),
+    ('HIT','Information Technology (Honours)'),
+    ('BMASC','Mathematical Sciences'),
+    ('HMASC','Mathematical Sciences (Honours)'),
+    ('BMEDS','Medical Science'),
+    ('HMEDS/HMDSA','Medical Science (Honours)'),
+    ('PHBSCIENCE', 'PhB / Bachelor of Philosophy (Honours) in Science'),
+    ('APSYC','Psychology (Honours)'),
+    ('BSC','Science'),
+    ('HSC','Science (Honours)'),
+    ('ASCAD','Science (Advanced) (Honours)'),
+    ('BSPSY','Science (Psychology)'),
+    ('HSPSY','Science (Psychology) (Honours)'),
+    ('ASENG','Software Engineering (Honours)'),
+    ('ESCIE','Diploma of Science'),
+    ('ECOMP','Diploma of Computing'),
+)
+
 
 ROLES = (
     ('Mentee', 'Mentee'),
     ('Mentor', 'Mentor'),
 )
 
-DEGREE_MAJOR = (
-    ('-', '-'), #error-checking st. "-" isn't a valid answer
-    ('MAJOR1', 'MAJOR1'),
-    ('MAJOR2', 'MAJOR2'),
-    ('MAJOR3', 'MAJOR3'),
-)
-
 GENDER = (
-    ('-', '-'), #error-checking st. "-" isn't a valid answer
+    ('', '-'), #error-checking st. "-" isn't a valid answer
     ('Male', 'Male'),
     ('Female', 'Female'),
     ('Other', 'Other'),
@@ -32,7 +62,6 @@ GENDER = (
 
 
 MENTOR_GENDER = (
-    ('-', '-'), #error-checking st. "-" isn't a valid answer
     ('Definitely', 'Definitely'),
     ('If possible', 'If possible'),
     ('Unconcerned', 'Unconcerned'),
@@ -43,9 +72,10 @@ class SignupForm(forms.Form):
     first_name = forms.CharField(max_length=30, label='First Name')
     last_name = forms.CharField(max_length=30, label='Last Name')
     uniId = forms.CharField(max_length=100, label='University ID')
-    study_year = forms.IntegerField(min_value = 2000, max_value = 2017, label='Year of Study')
-    degree_programme = forms.ChoiceField(choices=DEGREE_PROGRAMME, label='What degree program are you in?')
-    degree_major = forms.ChoiceField(choices=DEGREE_MAJOR, label='What is your major/subject area in which you focus?')
+    study_year = forms.ChoiceField(choices=YEAR_OF_STUDY, label="Year of Study")
+    degree_programme = forms.ChoiceField(choices=BACHELOR_DEGREE_PROGRAMME, label='Bachelor Degree Program 1')
+    degree_programme_2 = forms.ChoiceField(choices=BACHELOR_DEGREE_PROGRAMME, required = False, label='Bachelor Degree Program 2 (if applicable, e.g. flexible double degree)')
+    degree_major = forms.CharField(max_length=30, required = False, label='What is your degree major?')
     gender = forms.ChoiceField(choices=GENDER, label='What gender do you identify as?')
     mentor_gender = forms.ChoiceField(choices=MENTOR_GENDER, label='Would you prefer a mentee/mentor that is the same gender as you?')
     why_mentor = forms.CharField(max_length=150, required = False, widget=forms.Textarea, label='Why do you want to become a mentor?')
@@ -63,6 +93,7 @@ class SignupForm(forms.Form):
         user.profile.uniId = self.cleaned_data['uniId']
         user.profile.study_year = self.cleaned_data['study_year']
         user.profile.degree_programme = self.cleaned_data['degree_programme']
+        user.profile.degree_programme_2 = self.cleaned_data['degree_programme_2']
         user.profile.degree_major = self.cleaned_data['degree_major']
         user.profile.gender = self.cleaned_data['gender']
         user.profile.mentor_gender = self.cleaned_data['mentor_gender']

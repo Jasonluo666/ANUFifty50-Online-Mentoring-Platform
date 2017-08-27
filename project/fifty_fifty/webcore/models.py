@@ -7,12 +7,47 @@ from django.core.validators import RegexValidator
 from django.core.validators import MinValueValidator
 from django.core.validators import MaxValueValidator
 
+YEAR_OF_STUDY = (
+    ('1','1'),
+    ('2','2'),
+    ('3','3'),
+    ('4','4'),
+    ('5+','5+'),
+)
 
-DEGREE_PROGRAMME = (
-    ('Science', 'Science'),
-    ('Technology', 'Technology'),
-    ('Engineering','Engineering'),
-    ('Mathematics', 'Mathematics')
+BACHELOR_DEGREE_PROGRAMME = (
+    ('','-'),
+    ('AACOM','Advanced Computing (Honours)'),
+    ('AACRD','Advanced Computing (R&D) (Honours)'),
+    ('BADAN','Applied Data Analytics'),
+    ('HADAN','Applied Data Analytics (Honours)'),
+    ('BBIOT','Biotechnology'),
+    ('HBIOT','Biotechnology (Honours)'),
+    ('AENGI','Engineering (Honours)'),
+    ('AENRD','Engineering (R&D) (Honours)'),
+    ('BENSU','Environment and Sustainability'),
+    ('HENSU','Environment and Sustainability (Honours)'),
+    ('AENSU','Environment and Sustainability Advanced (Honours)'),
+    ('HENVS','Environemntal Studies'),
+    ('BGENE','Genetics'),
+    ('HGENE','Genetics (Honours)'),
+    ('BHLTH','Health Science (Honours)'),
+    ('BIT','Information Technology'),
+    ('HIT','Information Technology (Honours)'),
+    ('BMASC','Mathematical Sciences'),
+    ('HMASC','Mathematical Sciences (Honours)'),
+    ('BMEDS','Medical Science'),
+    ('HMEDS/HMDSA','Medical Science (Honours)'),
+    ('PHBSCIENCE', 'PhB / Bachelor of Philosophy (Honours) in Science'),
+    ('APSYC','Psychology (Honours)'),
+    ('BSC','Science'),
+    ('HSC','Science (Honours)'),
+    ('ASCAD','Science (Advanced) (Honours)'),
+    ('BSPSY','Science (Psychology)'),
+    ('HSPSY','Science (Psychology) (Honours)'),
+    ('ASENG','Software Engineering (Honours)'),
+    ('ESCIE','Diploma of Science'),
+    ('ECOMP','Diploma of Computing'),
 )
 
 ROLES = (
@@ -20,13 +55,8 @@ ROLES = (
     ('Mentor', 'Mentor'),
 )
 
-DEGREE_MAJOR = (
-    ('MAJOR1', 'MAJOR1'),
-    ('MAJOR2', 'MAJOR2'),
-    ('MAJOR3', 'MAJOR3'),
-)
-
 GENDER = (
+    ('','-'), #error-checking st. "-" isn't a valid answer
     ('Male', 'Male'),
     ('Female', 'Female'),
     ('Other', 'Other'),
@@ -46,9 +76,10 @@ class Profile(models.Model):
     role = models.CharField(max_length=15, null = True ,choices=ROLES)
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     uniId = models.CharField(max_length=100)
-    study_year = models.IntegerField(null = True, validators=[MinValueValidator(2000), MaxValueValidator(2017)])
-    degree_programme = models.CharField(max_length=50, null = True ,choices=DEGREE_PROGRAMME)
-    degree_major = models.CharField(max_length=50, null = True ,choices=DEGREE_MAJOR)
+    study_year = models.CharField(max_length=100,choices=YEAR_OF_STUDY, blank=False)
+    degree_programme = models.CharField(max_length=50, null = True ,blank=False,choices=BACHELOR_DEGREE_PROGRAMME)
+    degree_programme_2 = models.CharField(max_length=50, null = True ,choices=BACHELOR_DEGREE_PROGRAMME)
+    degree_major = models.CharField(max_length=15, null = True)
     gender = models.CharField(max_length=15, null = True ,choices=GENDER)
     mentor_gender = models.CharField(max_length=15, null = True ,choices=MENTOR_GENDER)
     why_mentor = models.CharField(max_length=150, null = True)
@@ -79,7 +110,6 @@ class Xpairs(models.Model):
 def transfer(tee,tor):
     menteeId = tee.split(' ', 1)[1]
     mentorId = tor.split(' ', 1)[1]
-    print(new)
     print(Profile.objects.all())
     Profile.objects.filter(uniId__contains=menteeId).update(paired_with=mentorId)
     Profile.objects.filter(uniId__contains=mentorId).update(paired_with=menteeId)
