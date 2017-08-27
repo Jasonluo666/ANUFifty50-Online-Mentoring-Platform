@@ -80,7 +80,11 @@
                         </li>
 
                            <li>
-                             <a class="page-scroll" href="mentor.html">My Mentor</a>
+                             {% if request.user.profile.role == 'Mentor' %}
+                             <a class="page-scroll" href="mentor.html">Mentee Details</a>
+                            {% else %}
+                             <a class="page-scroll" href="mentor.html">Mentor Details</a>
+                            {% endif %}
                         </li>
                         <li>
                             <a class="page-scroll" href="resources.html">Resources</a>       <!-- login -->
@@ -118,8 +122,13 @@
             {{post.created|date}}</time>
         </p>
         </div>
+<<<<<<< HEAD
     {% endfor %}
         
+=======
+        <!-- /.container -->
+
+>>>>>>> Development
         <footer class="contact-footer">
             <div style="text-align:center;">
                 <span style="color:white;">Contact Us:</span>

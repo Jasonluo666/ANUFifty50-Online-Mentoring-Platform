@@ -4,7 +4,7 @@ from .models import Xpairs
 # Register your models here.
 
 class ProfileAdmin(admin.ModelAdmin):
-    list_display = ["uniId","role","user","gender","degree_programme","degree_major"]
+    list_display = ["uniId","role","user","gender","degree_programme","degree_major","paired_with"]
 
 
 
